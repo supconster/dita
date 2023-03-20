@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Automatic turn-off function","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GD0R035Q.html","attributes":{"data-id":"id231GD0R035Q"},"menu":{"hasChildren":false},"tocID":"id231GD0R035Q-d9858e2235","topics":[]}]});

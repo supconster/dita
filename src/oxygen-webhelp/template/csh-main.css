@@ -1,0 +1,61 @@
+.wh_tiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: normal;
+    align-content: normal;
+    flex-wrap: wrap;
+}
+
+.wh_tile {
+    border-radius: 0;
+    width: 19%;
+    height: 150px;
+    /*display: table;*/
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    margin-bottom: 1%;
+	min-width: 140px;
+	min-height: 140px;
+	border: 2px solid #cccccc;
+	background-color: #fff;
+	
+}
+
+/*
+ * main page > content 영역 최대 크기/위치 설정
+ */
+.wh_main_page .wh_content_area {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 63px;
+}
+
+.wh_main_page .wh_content_flex_container{
+	padding: 0;
+}
+	
+@media screen and (max-width: 1024px) {
+    .wh_main_page .wh_content_flex_container{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .wh_tile{
+        width: 31.5%;
+        min-width: 100px;
+    }
+}
+/*메인 타이틀, 사이트메뉴 커서 모양  */
+.wh_tile:hover, .wh_main_page_toc_entry:hover, .wh_main_page_toc_accordion_header:hover  {
+	background-color: #d9d9d9;
+	cursor: pointer;
+}
+.main-top-message {
+    text-align: left;
+    margin-top: 20px;
+    max-width: 1024px;
+    width: 100%;
+}

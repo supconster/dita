@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Parking Collision-Avoidance Assist disabled","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231DDM00AE2.html","attributes":{"data-id":"id231DDM00AE2"},"menu":{"hasChildren":false},"tocID":"id231DDM00AE2-d9858e8449","topics":[]}]});

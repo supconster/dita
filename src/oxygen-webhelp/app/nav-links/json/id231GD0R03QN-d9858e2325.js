@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Controlling the wipers automatically","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GD0R03AT.html","attributes":{"data-id":"id231GD0R03AT"},"menu":{"hasChildren":false},"tocID":"id231GD0R03AT-d9858e2335","topics":[]}]});

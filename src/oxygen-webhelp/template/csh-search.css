@@ -1,0 +1,68 @@
+/*
+ * search page > content 영역 최대 크기/위치 설정
+ */
+.wh_search_page .container-fluid {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 63px 15px 50px 15px;
+}
+.wh_search_container {
+	padding: 0;
+    border-bottom: 2px solid #000000;
+    height: 77px;
+    width: 100%;	
+}
+.wh_search_input {
+    width: 99%;
+	max-width: calc(1024px - 1%);
+    margin: 0 auto 0 auto;
+	padding: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.wh_search_textfield {
+    border: 1px solid #dddddd;
+	border-radius: 0;
+	/*
+    outline: none;
+    font-size: 18px;
+    margin: 5px;
+    padding: 0.3em;
+	*/
+    width: 220px;
+}
+
+#searchForm > div {
+    width: auto;
+}
+
+.wh_search_button {
+    position: relative;
+    color: #000;
+    background-color: transparent;	
+	border: none;	
+	padding: 0 0.5em 1em 0.5em;;
+}
+
+.wh_search_button:after {
+    font-size: 2em;
+}
+
+.searchresult li::marker{
+    content: none;
+}
+
+/* Render search area for devices smaller than 767px */
+@media only screen and (max-width: 767px) {
+    #searchForm > div {
+        /* width: 90%; */
+        width: 100%;
+    }
+    .wh_search_button {
+        /* display: none; */
+        display: inline-block;
+    }
+}
