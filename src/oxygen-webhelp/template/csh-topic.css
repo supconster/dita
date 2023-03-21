@@ -295,20 +295,29 @@ ol {
 ol.callout_continue {
 	list-style: none;
 	counter-reset: none;
-	padding-left: 1.14em;
 }
 
 ol.callout li, ol.callout_continue li {
 	counter-increment: callout-counter;
 }
-ol.callout_continue li:before {
-  content: counter(callout-counter) ". ";
-  position: absolute;
-  width: 1.5em;
-  left: 1em;
-  text-align: right;
+@supports (-webkit-touch-callout: none) {
+	ol.callout_continue li:before {
+	  content: counter(callout-counter) ". ";
+	  position: absolute;
+	  width: 1.5em;
+	  left: 1em;
+	  text-align: right;
+	}
+	ol.callout_continue {
+		padding-left: 1.14em;
+	}	
 }
 
+@supports not (-webkit-touch-callout: none) {
+	ol.callout_continue li::marker {
+	  content: counter(callout-counter) ". ";
+	}
+}
 /*
  * override "링크" style
  */
