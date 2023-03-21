@@ -300,8 +300,16 @@ ol.callout_continue {
 ol.callout li, ol.callout_continue li {
 	counter-increment: callout-counter;
 }
-ol.callout_continue li::marker {
-  content: counter(callout-counter) ". ";
+@supports (-webkit-touch-callout: none) {
+	ol.callout_continue li:marker {
+	  content: counter(callout-counter) ". ";
+	}
+}
+
+@supports not (-webkit-touch-callout: none) {
+	ol.callout_continue li::marker {
+	  content: counter(callout-counter) ". ";
+	}
 }
 
 /*
