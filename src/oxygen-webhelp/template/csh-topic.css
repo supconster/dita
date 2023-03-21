@@ -305,11 +305,11 @@ ol.callout li, ol.callout_continue li {
 	  content: counter(callout-counter) ". ";
 	  position: absolute;
 	  width: 1.5em;
-	  left: 1em;
+	  left: 0;
 	  text-align: right;
 	}
 	ol.callout_continue {
-		padding-left: 1.14em;
+		/*padding-left: 1.14em;*/
 	}	
 }
 
