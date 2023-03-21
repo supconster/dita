@@ -305,7 +305,7 @@ ol.callout li, ol.callout_continue li {
 	  content: counter(callout-counter) ". ";
 	  position: absolute;
 	  width: 1.5em;
-	  left: 0;
+	  left: 1em;
 	  text-align: right;
 	}
 	ol.callout_continue {
