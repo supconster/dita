@@ -204,7 +204,6 @@ ul[class ~= "topic/ul"], ol[class ~= "topic/ol"] {
     padding: 0;
 	border: 1px solid ;
 	border-radius: 3px;
-	color: black;
 }
 /* 폰트 버튼 사이즈 */
 .sizeClass1 {
@@ -295,21 +294,18 @@ ol {
 ol.callout_continue {
 	list-style: none;
 	counter-reset: none;
+	padding-left: 1.14em;
 }
 
 ol.callout li, ol.callout_continue li {
 	counter-increment: callout-counter;
 }
-@supports (-webkit-touch-callout: none) {
-	ol.callout_continue li:marker {
-	  content: counter(callout-counter) ". ";
-	}
-}
-
-@supports not (-webkit-touch-callout: none) {
-	ol.callout_continue li::marker {
-	  content: counter(callout-counter) ". ";
-	}
+ol.callout_continue li:before {
+  content: counter(callout-counter) ". ";
+  position: absolute;
+  width: 1.5em;
+  left: 1em;
+  text-align: right;
 }
 
 /*
@@ -347,7 +343,6 @@ img.imagecenter {
 	padding-bottom: 2px;
 	*/
 	font-size: 0.6em;
-	max-width: 100%;
 }
 
 /* wh_topic_page 네비게이션 버튼 애니매이션효과 */
