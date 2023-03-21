@@ -204,6 +204,7 @@ ul[class ~= "topic/ul"], ol[class ~= "topic/ol"] {
     padding: 0;
 	border: 1px solid ;
 	border-radius: 3px;
+	color: black;
 }
 /* 폰트 버튼 사이즈 */
 .sizeClass1 {
@@ -343,6 +344,7 @@ img.imagecenter {
 	padding-bottom: 2px;
 	*/
 	font-size: 0.6em;
+	max-width: 100%;
 }
 
 /* wh_topic_page 네비게이션 버튼 애니매이션효과 */
