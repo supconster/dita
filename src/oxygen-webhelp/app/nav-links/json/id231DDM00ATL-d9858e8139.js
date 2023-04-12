@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Rear Cross-Traffic Collision-Avoidance Assist disabled","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231DDM00AAX.html","attributes":{"data-id":"id231DDM00AAX"},"menu":{"hasChildren":false},"tocID":"id231DDM00AAX-d9858e8149","topics":[]}]});

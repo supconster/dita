@@ -1,1 +1,0 @@
-define({"topics":[{"title":"One-Touch Lane-Change function","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GD0R03AZ.html","attributes":{"data-id":"id231GD0R03AZ"},"menu":{"hasChildren":false},"tocID":"id231GD0R03AZ-d9858e2155","topics":[]}]});

@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Declaration of conformity","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GD0R03QU.html","attributes":{"data-id":"id231GD0R03QU"},"menu":{"hasChildren":false},"tocID":"id231GD0R03QU-d9858e1255","topics":[]}]});

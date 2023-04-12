@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Auto reverse function","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GD0R03U2.html","attributes":{"data-id":"id231GD0R03U2"},"menu":{"hasChildren":false},"tocID":"id231GD0R03U2-d9858e1855","next":"id231GD0R03U2-d9858e1855"}]});

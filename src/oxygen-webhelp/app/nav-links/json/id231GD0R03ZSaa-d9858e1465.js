@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Adjusting power tailgate opening height","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GD0R03QY.html","attributes":{"data-id":"id231GD0R03QY"},"menu":{"hasChildren":false},"tocID":"id231GD0R03QY-d9858e1475","topics":[]}]});
