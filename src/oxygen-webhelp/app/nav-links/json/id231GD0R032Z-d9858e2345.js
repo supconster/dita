@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Controlling the wipers","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GD0R03FS.html","attributes":{"data-id":"id231GD0R03FS"},"menu":{"hasChildren":false},"tocID":"id231GD0R03FS-d9858e2355","topics":[]}]});

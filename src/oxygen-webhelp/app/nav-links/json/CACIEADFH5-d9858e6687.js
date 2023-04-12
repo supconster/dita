@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Manual Speed Limit Assist operation","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231DDM009ZZ.html","attributes":{"data-id":"id231DDM009ZZ"},"menu":{"hasChildren":false},"tocID":"id231DDM009ZZ-d9858e6697","next":"id231DDM009ZZ-d9858e6697"}]});

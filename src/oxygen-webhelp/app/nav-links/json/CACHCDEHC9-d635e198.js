@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Recommended CRS for Vehicle according to UN regulations","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GEF00RDW.html","attributes":{"data-id":"id231GEF00RDW"},"menu":{"hasChildren":false},"tocID":"id231GEF00RDW-d635e208","topics":[]}]});

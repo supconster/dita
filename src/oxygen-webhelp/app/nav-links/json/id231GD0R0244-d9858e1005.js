@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Ultrasonic Intrusion Protection (UIP)","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GD0R02E9.html","attributes":{"data-id":"id231GD0R02E9"},"menu":{"hasChildren":false},"tocID":"id231GD0R02E9-d9858e1015","topics":[]}]});

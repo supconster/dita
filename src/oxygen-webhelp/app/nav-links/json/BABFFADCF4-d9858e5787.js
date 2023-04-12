@@ -1,1 +1,0 @@
-define({"topics":[{"title":"When the charging connector is locked","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GD0I70E9.html","attributes":{"data-id":"id231GD0I70E9"},"menu":{"hasChildren":false},"tocID":"id231GD0I70E9-d9858e5797","topics":[]}]});
