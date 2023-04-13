@@ -1,0 +1,9 @@
+.wh_child_links:before {
+	content: "Contains Topics";
+}
+.wh_child_links:lang(ko):before {
+	content: "하위 내용";
+}
+.wh_child_links:lang(ar):before {
+	content: "يحتوي على مواضيع";
+}

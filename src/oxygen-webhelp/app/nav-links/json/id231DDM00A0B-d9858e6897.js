@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Taking a break","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231DDM00A6Z.html","attributes":{"data-id":"id231DDM00A6Z"},"menu":{"hasChildren":false},"tocID":"id231DDM00A6Z-d9858e6907","topics":[]}]});
