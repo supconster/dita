@@ -8,16 +8,31 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
+    transition: left 0.4s ease-in-out;
+	position: relative;
+	left: 0;
+}
+@media (hover: none) and (pointer: coarse) {
+	.wh_topic_page .wh_content_area {
+		max-width: 1024px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	    padding-bottom: 150px;
+		transition: left 0.4s ease-in-out;
+		position: relative;
+		left: 0;
+
+	}
 }
 .wh_topic_page .container-fluid {
 	max-width: inherit;
 	padding-left: 0;
 	padding-right: 0;
 	padding: 5px;
-	transition: left 0.4s ease-in-out;
-	position: relative;
-	left: 0;
+	
 }
 
 .wh_navigation_links {
@@ -355,11 +370,6 @@ ol.callout li, ol.callout_continue li {
 .wh_tile:hover a{
     color: #FFFFFF
 } 
-/* .wh_tile:hover img{
-	-webkit-filter: invert(100%);
-	filter: invert(100%);
-}  */
-
 /*abbreviation 들여쓰기 수정  */
 .dl {
 	padding: 0;
@@ -379,8 +389,15 @@ div.imagecenter {
 img.imagecenter {
 	margin-bottom: 0;
 }
+div.imageleft{
+	display: table;
+	text-align: center;
+}
+.imageleft img{
+	margin-bottom: 0;
+}
 *[class ~= "topic/imagename"] {
-    background-color: #656565;
+    background-color: #697278;
 	color: #fff;
 	margin: auto;
 	/*
@@ -392,11 +409,11 @@ img.imagecenter {
 }
 
 /* wh_topic_page 네비게이션 버튼 애니매이션효과 */
-.wh_topic_page .container-fluid.rightClass{
+.wh_topic_page .wh_content_area.rightClass{
 	left: -3500px;
 } 
 
-.wh_topic_page .container-fluid.leftClass{
+.wh_topic_page .wh_content_area.leftClass{
 	left: +3500px;
 } 
 

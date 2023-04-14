@@ -1,8 +1,7 @@
 .wh_header {
-    /* display: none; */
 	padding: 0;
     border-top: 7px solid #697278;
-    height: 77px;
+    min-height: 77px;
     width: 100%;    
     box-shadow: -12px 5px 20px #00000017;
     margin-bottom: 20px;
@@ -13,7 +12,8 @@
     width: 100%;
     padding: 0px; 
 	width: 100%;
-	background-color: #697278;	
+	background-color: #697278;
+	
 }
 
 .footer-container{
@@ -23,18 +23,18 @@
 	display: flex;
     align-items: center;
 	height: 40px;
-	background-color: #697278; 
+	
 }
 .footer-copyright {
 	text-align: left;
-	color: #9BA1A5;	
+	color: #FFFFFF;	
 }
 html, body{
 height: 100%;
 overflow:hidden;
 }
 html{  
-display:none;
+visibility: hidden;
 } 
 .header-left{
 	    line-height: 1;

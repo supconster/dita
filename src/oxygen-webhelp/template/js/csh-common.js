@@ -101,18 +101,14 @@ $(function(){
 	
 	/* wh_topic_page 네비게이션 버튼 트렌지션효과 */
 	$(".navnext a").on('click', function(){
-		$(body).css("overflow", "hidden");
-		$(html).css("overflow", "hidden");
-		$('.container-fluid').toggleClass('rightClass');  
+		$('.wh_content_area').toggleClass('rightClass');  
 		event.preventDefault();
 		setTimeout(function(){
 			window.location.href = $(".navnext a").attr('href');
 		 }, 300);
 	});
 	$(".navprev a").on('click', function(){
-		$(body).css("overflow", "hidden");
-		$(html).css("overflow", "hidden");
-		$('.container-fluid').toggleClass('leftClass'); 
+		$('.wh_content_area').toggleClass('leftClass'); 
 		event.preventDefault();
 		setTimeout(function(){
 			window.location.href = $(".navprev a").attr('href');
@@ -164,35 +160,21 @@ $(function(){
 	$(".wh_search_page .wh_search_textfield").focus();
 }); 
 $(function(){
-/*영역별 높이 조절*/	 
-		var vh = 0;
-		$("body").children("header").each(function(){
-			if( $(this).css("display" ) != "none" ){
-				vh += $(this).outerHeight(); 
-			}
-	   });
-	   $("body").children("footer").each(function(){
-			if( $(this).css("display" ) != "none"  ){
-				vh += $(this).outerHeight();
-			}
-	   });
-		/*if( $(".breadcrumb-sticky").css("display" ) != "none"  ){
-				vh += $(this).outerHeight(); 
-		}console.log("vhbreadcrumb: ", vh);*/
-	   $("body").children(".breadcrumb-sticky").each(function(){
-	   		if( $(this).css("display" ) != "none"  ){
-	   			vh += $(this).outerHeight();
-	   		}
-	   });
-		
-	   if( vh == 0 ){
-			vh = 170;
-	   }else{
-		vh += 100;
-	   }
-	   $(".breadcrumb-sticky").next().css("height", "calc( 100% - "+vh+"px )");
+/*영역별 높이 조절*/	
 	   $(".breadcrumb-sticky").next().css("overflow-y", "auto");
-	   $("html").css("display", "block"); 
+	   $("html").css("visibility", "visible"); 
+});
+/*스크롤바 있는 페이지에 다른 css적용*/
+var bodyId = document.body.id;  
+var myDiv = document.getElementById(bodyId); 
+var hasVerticalScrollbar = myDiv.scrollHeight > myDiv.clientHeight;
+console.log("hasVerticalScrollbar: ", hasVerticalScrollbar); 
+
+$(function(){
+	if(hasVerticalScrollbar ===  true){
+		$('.wh_content_area').css('padding-left', '20px');
+		$('.wh_content_area').css('padding-right', '10px');	
+	};
 });
 
 

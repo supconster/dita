@@ -3,24 +3,19 @@
 	.wh_main_page .wh_content_area{
 		padding-top: 0px !important;
 	}
+	/*모바일용 스크롤바 안보이게  */
 	.breadcrumb-sticky + .wh_content_area, .container-fluid{
-		overflow:hidden !important;
+		-ms-overflow-style: none !important; 
+		scrollbar-width: none;
 	}
-	
+	.wh_content_area::-webkit-scrollbar {display: none;}
+	.container-fluid::-webkit-scrollbar {display: none;}
 }
 
 @media screen and (max-width: 640px) {
     .wh_tile{
      	min-width: 340px;
     }
-}
-@media (pointer:coarse) {
-    /* custom css for "touch targets" */
-	.wh_tile{
-     	min-width: 340px;
-    }
-
-
 }
 .wh_tiles {
     display: flex;

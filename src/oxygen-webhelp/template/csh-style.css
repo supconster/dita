@@ -4,7 +4,7 @@
  */
  /*content와 footer 간격  */ 
 body {
-	display: block;
+	display:flex;
     min-height: 100%;
 } 
 /*
