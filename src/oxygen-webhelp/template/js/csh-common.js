@@ -1,3 +1,28 @@
+/*서치박스 크기 계산*/
+var vh = 0;
+var total = 0;
+ var setContentArea = function(){
+			
+			$(".wh_header").children(".wh_main_page_search").each(function(){
+					total = $(this).outerWidth(); 
+			});
+		    console.log("total: ", total); 
+			$(".wh_main_page_search").children(".header-left").each(function(){
+					vh += $(this).outerWidth(); 
+			});
+		    console.log("vh: ", vh); 
+		    $(".wh_main_page_search").children(".header-right-container").each(function(){
+					vh += $(this).outerWidth(); 
+			});
+			total -= 40; 
+		    console.log("vh: ", vh); 
+			console.log("total: ", total); 
+		    
+ };
+$( function(){
+			setContentArea();
+	   });
+	   
 var showNavigationLinks = function() {
 	$('.wh_navigation_links .navheader span').fadeIn(100, function(){
 	  setTimeout(function() {
@@ -139,8 +164,17 @@ $(function(){
 		if($('.wh_search_textfield').hasClass('activeTextfield') && activeVal != ""){
 			$('#searchForm').submit(); 
 		}else {
+			$(".wh_search_textfield").css("visibility", "visible");
 			$(".wh_search_textfield").addClass('activeTextfield');
 			$(".wh_search_textfield").focus();
+			if(($(window).width() < 600)){
+				if(total - vh >300 ){
+					$('.wh_search_textfield.activeTextfield').css("width", "220px");
+				}else {
+					$('.wh_search_textfield.activeTextfield').css("width", "calc( "+total+"px - "+vh+"px )");
+				}
+				
+			}
 		}
 	}); //검색버튼 끝 
 	$(".wh_search_textfield").on('focusout', function(){
@@ -148,8 +182,10 @@ $(function(){
 			if ($(".wh_search_textfield").is(":focus")) {
 				return false;
 			}
+			$('.wh_search_textfield.activeTextfield').css("width", "");
 			$('.wh_search_textfield').val('');
 			$(".wh_search_textfield").removeClass('activeTextfield');
+				
 		}, 300);
 	});
 
@@ -158,6 +194,13 @@ $(function(){
 	/* 검색 페이지 : 검색어 입력창 show + focus */
 	$(".wh_search_page .wh_search_textfield").addClass("activeTextfield");
 	$(".wh_search_page .wh_search_textfield").focus();
+	$(".wh_search_textfield").css("visibility", "visible");
+		if(total - vh > 300 ){
+			$('.wh_search_textfield.activeTextfield').css("width", "220px");
+			}else {
+				$('.wh_search_textfield.activeTextfield').css("width", "calc( "+total+"px - "+vh+"px )");
+			}
+				
 }); 
 $(function(){
 /*영역별 높이 조절*/	
