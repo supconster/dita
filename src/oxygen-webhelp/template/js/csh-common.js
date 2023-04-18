@@ -168,6 +168,7 @@ $(function(){
 				//	$('.wh_search_textfield').css("width", "calc( "+total+"px - "+width+"px )"); 
 				//}
 				//$(".wh_search_textfield").css("display", "inline"); 
+				$(".wh_search_textfield").css("width",  "calc( "+total+"px - "+width+"px )");
 				$(".wh_search_textfield").addClass("show"); 
 				$(".wh_search_textfield").focus(); 
 				
@@ -196,7 +197,7 @@ $(function(){
 		
 				
 		if( !$(this).hasClass("activeTextfield")){ 
-			setTimeout( searchBlur, 100);
+			setTimeout( searchBlur, 300);
 			
 			$('.wh_search_textfield').css("width", "0px");
 		}
