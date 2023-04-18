@@ -72,8 +72,8 @@ body {
 	font-size: 1.43em;
 }
 /* smartphones, touchscreens */
-@media (hover: none) and (pointer: coarse) {
-	.wh_tile_title a {
+@media screen and (max-width: 640px) {
+  	.wh_tile_title a {
 		color: inherit;
 		font-size: 1.33em;
 }

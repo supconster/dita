@@ -37,18 +37,30 @@
 .wh_search_textfield {
     border: 0;
     width: 0;
-	transition: width 0.2s ease-in-out;
 	margin-right: 10px;
 	background-color: #ffffff;
 	opacity: 1;
-	visibility:hidden;
+	display:none;
+	max-width:220px;
+	transition: width 0.2s ease-in-out;
+	position: absolute;
+	right: 20px;
+	top: -5px;
+}
+.wh_search_textfield:focus {
+    border: 1px solid #dddddd !important;
+	margin-right: 10px;
+	display:inline;
+	border-radius: 0;	 
+	background-color: #ffffff;
+	width: 220px;
 }
 .wh_search_textfield.activeTextfield {
-    border: 1px solid #dddddd;
-    border-radius: 0;	
-    width: 220px;
+    border: 1px solid #dddddd !important;
+	display:inline !important;
+	margin-right: 10px;
 	background-color: #ffffff;
-	/*display:inline;*/
+	
 }
 .wh_search_button {
 	background-image: url("images/icon_search.svg");
@@ -61,6 +73,7 @@
 	height: 24px;
     width: 24px;
     display: block;
+	margin-bottom: 4px
 }
 .wh_search_button:after {
     content: none;
@@ -78,13 +91,37 @@
     }
     .wh_search_button {
         /* display: none; */
-        display: block;;
+        display: block;
+		margin-bottom: 4px
     }
+	.wh_search_textfield {
+		border: 0;
+		width: 0;
+		margin-right: 10px;
+		background-color: #ffffff;
+		display:none;
+		max-width:220px;
+		transition: width 0.2s ease-in-out;
+		position: absolute;
+		right: 20px;
+		top: -5px;
+	}
+	.wh_search_textfield:focus {
+		border: 1px solid #dddddd !important;
+		margin-right: 10px;
+		display:inline;
+		border-radius: 0;	 
+		background-color: #ffffff;
+		
+	}
 	.wh_search_textfield.activeTextfield {
-	    border: 1px solid #dddddd;
-	    border-radius: 0;	
-	    /*width: 170px;*/
-		z-index: 1; 
+		border: 1px solid #dddddd !important;
+		display:inline !important;
+		margin-right: 10px;
+		background-color: #ffffff;
+	}
+	.wh_search_page .container-fluid{
+		padding: 0px 15px 50px 15px;
 	}
 }
 .btn_nav img{
@@ -106,7 +143,6 @@
 	}
 	.scrollbar::-webkit-scrollbar {display: none;}
 }
-/* 모바일용 페이지 버튼 */
 @media (max-width: 600px){
 	.pagination {
 		display: flex;

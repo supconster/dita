@@ -1,28 +1,28 @@
 /*서치박스 크기 계산*/
-var vh = 0;
+var width = 0;
 var total = 0;
- var setContentArea = function(){
+ var setTextfield = function(){
 			
 			$(".wh_header").children(".wh_main_page_search").each(function(){
 					total = $(this).outerWidth(); 
 			});
 		    console.log("total: ", total); 
-			$(".wh_main_page_search").children(".header-left").each(function(){
-					vh += $(this).outerWidth(); 
+			$(".wh_search_input").children(".header-left").each(function(){
+					width += $(this).outerWidth(); 
 			});
-		    console.log("vh: ", vh); 
-		    $(".wh_main_page_search").children(".header-right-container").each(function(){
-					vh += $(this).outerWidth(); 
+		    console.log("width: ", width); 
+		    $(".wh_search_input").children(".header-right-container").each(function(){
+					width += $(this).outerWidth(); 
 			});
-			total -= 40; 
-		    console.log("vh: ", vh); 
+			total -= 50; 
+		    console.log("width: ", width); 
 			console.log("total: ", total); 
 		    
  };
 $( function(){
-			setContentArea();
+			setTextfield();
 	   });
-	   
+
 var showNavigationLinks = function() {
 	$('.wh_navigation_links .navheader span').fadeIn(100, function(){
 	  setTimeout(function() {
@@ -161,46 +161,55 @@ $(function(){
 	$(".wh_search_button").on('click', function(){
 		var activeVal = $('.wh_search_textfield').val(); 
 		
-		if($('.wh_search_textfield').hasClass('activeTextfield') && activeVal != ""){
+		if( activeVal != ""){
 			$('#searchForm').submit(); 
 		}else {
-			$(".wh_search_textfield").css("visibility", "visible");
-			$(".wh_search_textfield").addClass('activeTextfield');
-			$(".wh_search_textfield").focus();
-			if(($(window).width() < 600)){
-				if(total - vh >300 ){
-					$('.wh_search_textfield.activeTextfield').css("width", "220px");
-				}else {
-					$('.wh_search_textfield.activeTextfield').css("width", "calc( "+total+"px - "+vh+"px )");
-				}
-				
-			}
+			$(".wh_search_textfield").css("display", "inline"); 
+			$(".wh_search_textfield").focus(); 
+			
 		}
-	}); //검색버튼 끝 
-	$(".wh_search_textfield").on('focusout', function(){
-		setTimeout(function() {
-			if ($(".wh_search_textfield").is(":focus")) {
-				return false;
-			}
-			$('.wh_search_textfield.activeTextfield').css("width", "");
-			$('.wh_search_textfield').val('');
-			$(".wh_search_textfield").removeClass('activeTextfield');
-				
-		}, 300);
+	}); 
+
+	$(".wh_search_textfield").on('focus', function(){  
+		if(($(window).width() < 600)){   
+			$('.wh_search_textfield').css("width", "calc( "+total+"px - "+width+"px )"); 
+		}
+	});
+	
+
+
+	$(".wh_search_textfield").on('focusout', function(){ 
+		if( !$(this).hasClass("activeTextfield")){ 
+			setTimeout(function() { 
+				$('.wh_search_textfield').css("width", "");
+				$('.wh_search_textfield').val(''); 
+				$(".wh_search_textfield").css("display", "none");
+			}, 300) ;
+		$('.wh_search_textfield').css("width", "0px");
+		}
 	});
 
 	/* 검색 후 back 클릭하여 topic 페이지로 넘어올 경우 검색어 제거 */
-	$(".wh_topic_page .wh_search_textfield").val("");
-	/* 검색 페이지 : 검색어 입력창 show + focus */
-	$(".wh_search_page .wh_search_textfield").addClass("activeTextfield");
-	$(".wh_search_page .wh_search_textfield").focus();
-	$(".wh_search_textfield").css("visibility", "visible");
-		if(total - vh > 300 ){
-			$('.wh_search_textfield.activeTextfield').css("width", "220px");
-			}else {
-				$('.wh_search_textfield.activeTextfield').css("width", "calc( "+total+"px - "+vh+"px )");
-			}
-				
+ 
+	 	$(".wh_topic_page .wh_search_textfield").val("");
+		if(total - width > 300 && $(window).width() > 600){
+			$('.wh_search_page  .wh_search_textfield').css("width", "220px");
+		}else {
+			console.log("total1:", total); 
+			console.log("width1:", width); 
+			$('.wh_search_page  .wh_search_textfield').css("width", "calc( "+total+"px - "+width+"px )");  
+		}
+			
+	/* activeTextfield 클래스 추가  */	
+	$.urlParam = function(name){
+		var 	results = new RegExp('[\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);
+		return results[1] || 0;
+	}
+
+	var searchQuery = $.urlParam('searchQuery');
+    if (searchQuery.trim()!='' && searchQuery!==undefined && searchQuery!='undefined') {
+		$('#textToSearch').addClass("activeTextfield");            
+    }				
 }); 
 $(function(){
 /*영역별 높이 조절*/	

@@ -15,7 +15,11 @@
 @media screen and (max-width: 640px) {
     .wh_tile{
      	min-width: 340px;
+     	width: 100% !important;
     }
+    .wh_main_page .wh_content_area{
+		padding-top: 0px !important;
+	}
 }
 .wh_tiles {
     display: flex;
@@ -28,7 +32,7 @@
 
 .wh_tile {
     border-radius: 0;
-    width: 480px;
+    width: 49%;
     height: 65px;
     /*display: table;*/
     margin-right: 0.5%;
