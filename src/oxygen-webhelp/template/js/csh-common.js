@@ -158,34 +158,47 @@ $(function(){
 	});
 	
 	/* 검색 버튼 + 검색어 입력창 show/hide 처리 */
-	$(".wh_search_button").on('click', function(){
-		var activeVal = $('.wh_search_textfield').val(); 
-		
-		if( activeVal != ""){
-			$('#searchForm').submit(); 
-		}else {
-			$(".wh_search_textfield").css("display", "inline"); 
-			$(".wh_search_textfield").focus(); 
+	$(".wh_search_button").on('click', function(){ 
+			var activeVal = $('.wh_search_textfield').val(); 
 			
-		}
+			if( activeVal != ""){
+				$('#searchForm').submit(); 
+			}else {
+				//if(($(window).width() < 600)){   
+				//	$('.wh_search_textfield').css("width", "calc( "+total+"px - "+width+"px )"); 
+				//}
+				//$(".wh_search_textfield").css("display", "inline"); 
+				$(".wh_search_textfield").addClass("show"); 
+				$(".wh_search_textfield").focus(); 
+				
+			} 
 	}); 
 
 	$(".wh_search_textfield").on('focus', function(){  
-		if(($(window).width() < 600)){   
-			$('.wh_search_textfield').css("width", "calc( "+total+"px - "+width+"px )"); 
-		}
+		$(".wh_search_textfield").css("width",  "calc( "+total+"px - "+width+"px )");
+		$(this).css("transition", "0.2s");
 	});
-	
 
-
+		var searchBlur = function(obj){
+				var id = document.activeElement.id;
+				var hasFocus = $('#wh_search_button').is(':focus') || $('#wh_search_textfield').is(':focus'); 
+				
+ 
+				if( hasFocus){
+					return false;
+				}else{  
+						$('.wh_search_textfield').val('');  
+						$(".wh_search_textfield").removeClass("show");  
+				}
+			}
+			
 	$(".wh_search_textfield").on('focusout', function(){ 
+		
+				
 		if( !$(this).hasClass("activeTextfield")){ 
-			setTimeout(function() { 
-				$('.wh_search_textfield').css("width", "");
-				$('.wh_search_textfield').val(''); 
-				$(".wh_search_textfield").css("display", "none");
-			}, 300) ;
-		$('.wh_search_textfield').css("width", "0px");
+			setTimeout( searchBlur, 100);
+			
+			$('.wh_search_textfield').css("width", "0px");
 		}
 	});
 
@@ -203,7 +216,11 @@ $(function(){
 	/* activeTextfield 클래스 추가  */	
 	$.urlParam = function(name){
 		var 	results = new RegExp('[\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);
+		if( results != null ){
 		return results[1] || 0;
+		}else{
+			return "";
+		}
 	}
 
 	var searchQuery = $.urlParam('searchQuery');
@@ -217,9 +234,9 @@ $(function(){
 	   $("html").css("visibility", "visible"); 
 });
 /*스크롤바 있는 페이지에 다른 css적용*/
-var bodyId = document.body.id;  
+var bodyId = document.body;  
 var myDiv = document.getElementById(bodyId); 
-var hasVerticalScrollbar = myDiv.scrollHeight > myDiv.clientHeight;
+var hasVerticalScrollbar = bodyId.scrollHeight > bodyId.clientHeight;
 console.log("hasVerticalScrollbar: ", hasVerticalScrollbar); 
 
 $(function(){
