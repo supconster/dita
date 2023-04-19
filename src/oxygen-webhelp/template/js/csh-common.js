@@ -246,5 +246,10 @@ $(function(){
 		$('.wh_content_area').css('padding-right', '10px');	
 	};
 });
-
-
+/* 모바일용 높이 계산 */
+var documentHeight = () => {
+var doc = document.documentElement;
+doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
+}
+window.addEventListener('resize', () => documentHeight());
+documentHeight();
