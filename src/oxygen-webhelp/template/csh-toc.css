@@ -1,7 +1,10 @@
 @media (hover: none) and (pointer: coarse) {
 	.wh_main_page_toc {
 		overflow: hidden;
+		-ms-overflow-style: none !important; 
+		scrollbar-width: none;
 	}
+	.wh_main_page_toc::-webkit-scrollbar {display: none;}
 }
 .wh_main_page_toc {
     position: fixed;
