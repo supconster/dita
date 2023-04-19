@@ -156,5 +156,7 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
-	
+}
+#wh-search-pagination > ul > li.active > a, #star .star{
+	z-index: 0;
 }
