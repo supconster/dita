@@ -125,6 +125,9 @@ define(['util', 'searchEngine', 'searchPresenter', 'searchHistoryItems', 'locali
     function searchSuccess(result) {
         // Add search query to history
         searchHistory.addSearchQueryToHistory(result.meta.originalSearchExpression);
+		if (navigator.userAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || navigator.userAgent.match(/LG|SAMSUNG|Samsung/) != null){
+			result.meta.maxItemsPerPage=5;
+		}
         searchPresenter.displayResults(result, onPageChangedHandler);
     }
 

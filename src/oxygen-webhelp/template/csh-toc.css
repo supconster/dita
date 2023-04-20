@@ -190,11 +190,12 @@ a[href="index.html"]{
 .wh_main_page_toc_accordion_entries {
 	/*max-height: 0; */ 
 	overflow: hidden;
-	/*transition: max-height 0.2s ease-out;*/
+	/*transition: height 0.2s ease-out;*/
 	/*display: block;*/
 	border-bottom: none;
 	background-color: #E8E8E8;
 }
+
 .expanded + .wh_main_page_toc_accordion_entries {
    /* max-height: 100vh; */ 
 }
