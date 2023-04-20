@@ -215,19 +215,29 @@ $(function(){
 		}
 			
 	/* activeTextfield 클래스 추가  */	
-	$.urlParam = function(name){
-		var 	results = new RegExp('[\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);
-		if( results != null ){
-		return results[1] || 0;
-		}else{
-			return "";
-		}
+	$.urlParam = function(sParam){
+		var sPageURL = window.location.search.substring(1), 
+                    sURLVariables = sPageURL.split('&'), 
+                    sParameterName, 
+                    i;
+            for (i = 0; i < sURLVariables.length; i++) { 
+                sParameterName = sURLVariables[i].split('='); 
+                if (sParameterName[0] === sParam) {  
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]); 
+                } 
+            }
 	}
+	
+	setTimeout( function(){
+		if( $('#textToSearch').val() != "" ){
+			$('#textToSearch').addClass("activeTextfield");            
+		}
+	}, 500);
 
-	var searchQuery = $.urlParam('searchQuery');
+	/*var searchQuery = $.urlParam('searchQuery');
     if (searchQuery.trim()!='' && searchQuery!==undefined && searchQuery!='undefined') {
 		$('#textToSearch').addClass("activeTextfield");            
-    }				
+    }	*/			
 }); 
 $(function(){
 /*영역별 높이 조절*/	
