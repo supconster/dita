@@ -98,6 +98,7 @@ body {
 	.wh_tile_title, .main-top-message, .footer-copyright{
 		font-family: inherit;
 		font-size: .86em;
+		margin-left:0 !important;
 	} 
 	.wh_tile_title a {
 		color: inherit;

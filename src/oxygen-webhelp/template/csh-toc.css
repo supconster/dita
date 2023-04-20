@@ -1,6 +1,4 @@
-:root {
-       --doc: 100%;
-   }
+
 @media (hover: none) and (pointer: coarse) {
 	.wh_main_page_toc {
 		overflow: hidden;

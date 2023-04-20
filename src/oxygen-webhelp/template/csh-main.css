@@ -22,6 +22,9 @@
     .wh_main_page .wh_content_area{
 		padding-top: 0px !important;
 	}
+	.wh_tiles{
+		margin-left: 0 !important;
+	}
 }
 .wh_tiles {
     display: flex;
@@ -30,11 +33,14 @@
     align-items: center;
     align-content: normal;
     flex-wrap: wrap;
+	width: 100%;
 }
-
+.wh_tiles, .main-top-message{
+	margin-left: 20px;
+}
 .wh_tile {
     border-radius: 0;
-    width: 49%;
+    width: 47%;
     height: 65px;
     /*display: table;*/
     margin-right: 0.5%;
@@ -78,8 +84,8 @@
     margin-left: auto;
     margin-right: auto;*/
 	width:100%;
-	padding-left: calc( 50% - 512px );
-	padding-right: calc( 50% - 512px );
+	padding-left: calc( 50% - 512px)!important;
+	padding-right: calc( 50% - 512px)!important;
     padding-top: 63px;
 }
 
