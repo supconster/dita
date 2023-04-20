@@ -250,9 +250,7 @@ $(function(){
 var documentHeight = () => {
 var doc = document.documentElement;
 doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
-//doc.css('height', '${window.innerHeight}px'); 
+
 }
 window.addEventListener('resize', () => documentHeight());
 documentHeight();
-
-

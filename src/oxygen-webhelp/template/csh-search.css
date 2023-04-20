@@ -151,12 +151,28 @@
 	}
 	.scrollbar::-webkit-scrollbar {display: none;}
 }
-@media (max-width: 600px){
+@media (max-width: 640px){
 	.pagination {
 		display: flex;
 		flex-wrap: wrap;
+		border: 1px solid #697278;
 	}
 }
-#wh-search-pagination > ul > li.active > a, #star .star{
+.pagination {
+		display: flex;
+		flex-wrap: wrap;
+		border: 1px solid #697278;
+}
+#wh-search-pagination > ul > li.active > a{
 	z-index: 0;
+	background-color: #697278;
+    border-color: #697278 !important;
+	
+}
+.page-link{
+	color: #697278;
+	
+}
+#star .star{
+	display: none; 
 }
