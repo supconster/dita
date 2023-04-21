@@ -80,6 +80,10 @@
     display: block;
 	margin-bottom: 4px
 }
+button:focus{
+	border: none;
+	outline: none;
+}
 .wh_search_button:after {
     content: none;
 }

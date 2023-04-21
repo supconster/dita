@@ -21,6 +21,9 @@ define(['util', 'searchEngine', 'searchPresenter', 'searchHistoryItems', 'locali
             searchQuery = searchQuery.replace(/\+/g, " ");
             if (searchQuery.trim()!='' && searchQuery!==undefined && searchQuery!='undefined') {
                 $('#textToSearch').val(searchQuery);
+				 if(!$('#textToSearch').hasClass("activeTextfield")){
+                      $('#textToSearch').addClass("activeTextfield");
+                }
                 util.debug("Execute search");
                 executeQuery();
                 util.debug("Executed search");
@@ -37,6 +40,9 @@ define(['util', 'searchEngine', 'searchPresenter', 'searchHistoryItems', 'locali
 
                 // Set to 1 if it is undefined
                 if (pageToShow == undefined || pageToShow == "undefined" || pageToShow == "") {
+					
+					
+					
                     pageToShow = 1;
                 } else {
                     pageToShow = parseInt(pageToShow);

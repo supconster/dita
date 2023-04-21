@@ -178,6 +178,7 @@ $(function(){
 	$(".wh_search_textfield").on('focus', function(){  
 		$(".wh_search_textfield").css("width",  "calc( "+total+"px - "+width+"px )");
 		$(this).css("transition", "0.2s");
+		
 	});
 
 		var searchBlur = function(obj){
@@ -214,30 +215,6 @@ $(function(){
 			$('.wh_search_page  .wh_search_textfield').css("width", "calc( "+total+"px - "+width+"px )");  
 		}
 			
-	/* activeTextfield 클래스 추가  */	
-	$.urlParam = function(sParam){
-		var sPageURL = window.location.search.substring(1), 
-                    sURLVariables = sPageURL.split('&'), 
-                    sParameterName, 
-                    i;
-            for (i = 0; i < sURLVariables.length; i++) { 
-                sParameterName = sURLVariables[i].split('='); 
-                if (sParameterName[0] === sParam) {  
-                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]); 
-                } 
-            }
-	}
-	
-	setTimeout( function(){
-		if( $('#textToSearch').val() != "" ){
-			$('#textToSearch').addClass("activeTextfield");            
-		}
-	}, 500);
-
-	/*var searchQuery = $.urlParam('searchQuery');
-    if (searchQuery.trim()!='' && searchQuery!==undefined && searchQuery!='undefined') {
-		$('#textToSearch').addClass("activeTextfield");            
-    }	*/			
 }); 
 $(function(){
 /*영역별 높이 조절*/	
