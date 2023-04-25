@@ -175,8 +175,13 @@ button:focus{
 }
 .page-link{
 	color: #697278;
-	
+}
+.page-link:focus{
+	box-shadow: none;
 }
 #star .star{
 	display: none; 
+}
+.page-link:hover{
+	z-index:0;
 }

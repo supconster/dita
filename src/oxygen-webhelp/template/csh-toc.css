@@ -226,3 +226,6 @@ a[href="index.html"]{
 .wh_main_page_toc_entry.home:hover {
     background-color: unset;
 }
+.table-container{
+	overflow-x: unset;
+}

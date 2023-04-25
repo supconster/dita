@@ -266,10 +266,10 @@ ul[class ~= "topic/ul"], ol[class ~= "topic/ol"] {
 }
 /*커서 숨기기  */
 .fontChangeButtonPlus.noCursor{
-	pointer-events : none;
+	pointer-events : unset;
 }
 .fontChangeButtonMinus.noCursor{
-	pointer-events : none;
+	pointer-events : unset;
 }
 /* note, caution, warning 기호 변경  */
 div.note {
