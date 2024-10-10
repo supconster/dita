@@ -1,0 +1,22 @@
+/* right to left language */
+/* toc 확장 아이콘  */
+html[dir='rtl'] .wh_main_page_toc .wh_main_page_toc_accordion_header:before{
+	content: url(images/down_arrow.svg);
+	left: 1.2em;
+}
+html[dir='rtl'] .wh_main_page_toc .wh_main_page_toc_accordion_header.expanded:before{
+	content: url(images/up_arrow.svg);
+}
+/* ltr 방향일때 아이콘 숨기기 */
+html[dir='rtl'] .wh_main_page_toc .wh_main_page_toc_accordion_header:after{
+	display: none; 
+}
+/* toc 왼쪽 위치 */
+html[dir='rtl'] .wh_main_page_toc{
+	left:-3500px;
+	right: unset;
+	transition: left 0.2s ease-in-out;
+} 
+html[dir='rtl'] .wh_main_page_toc.show{
+	left: 0;
+}

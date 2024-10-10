@@ -1,0 +1,197 @@
+@media (prefers-color-scheme: dark){
+/*폰트 색*/
+	
+	.container-fluid .wh_content_area .wh_topic_content, 
+	.wh_main_page_toc,
+	.wh_content_area{
+		color: #FFFFFF;
+	}
+	 div.wh_main_page_toc_entry span a,
+	.wh_main_page_toc_accordion_header a {
+		color: #FFFFFF !important;
+	}
+	/*header 그라데이션*/
+	.wh_header{
+		box-shadow: -12px 5px 20px #353b41 !important;
+		background-color: #05141F;
+	}
+	/*메인페이지*/
+	body,
+	body.wh_main_page,
+	.wh_topic_page .container-fluid,
+	.wh_search_input{
+		background-color: #05141F;
+	}
+	
+	.header-left .kia-logo img {
+		content: url("images/dark_images/kia_ci.svg");
+	}
+
+	.header-right .btn_nav img{
+		content: url("images/dark_images/icon_menu.svg");
+	}
+	div .wh_search_button {
+		background-image: url("images/dark_images/icon_search.svg");
+	}
+	.wh_tiles .wh_tile{
+		background-color: #2d343e;
+	}
+
+	/*img[alt="Electric vehicle guide"]{
+		background-image: url("images/dark_images/electric_vehicle_guide.svg");
+	}*/
+
+	/*사이드메뉴*/
+	.wh_main_page_toc_entry.home .topicref a:before{
+		content: url(images/dark_images/icon_home.svg);
+	}
+	.wh_main_page_toc_entry.home div.close_toc_icon {
+		background-image: url(images/dark_images/btn_Close.svg);
+	}
+	.wh_main_page_toc .wh_main_page_toc_accordion_header:after{
+		content: url(images/dark_images/down_arrow.svg); 
+	}
+	.wh_main_page_toc .wh_main_page_toc_accordion_header.expanded:after{
+		content: url(images/dark_images/up_arrow.svg); 
+	}
+	.wh_main_page_toc.show,
+	.wh_main_page_toc_entry{
+		background: #05141F;
+	}
+	.wh_main_page_toc .wh_main_page_toc_accordion_header:hover,
+	.wh_main_page_toc .wh_main_page_toc_entry:hover,
+	.wh_main_page_toc_accordion_header.expanded{
+		background-color: #19202a;
+	}
+	/*breadcrumb*/
+	.wh_breadcrumb .home a{
+		background-image: url(images/dark_images/icon_home_breadcrumb.svg);
+	}
+	body .breadcrumb-sticky {
+		background-color: #05141F; 
+	}
+	.wh_breadcrumb ol a{
+		color: #FFFFFF;
+	}
+	.wh_breadcrumb li:not(:last-of-type):after {
+		color: #FFFFFF;
+	}
+	/*topic*/
+	.wh_topic_content div.note > div.note__content {
+		background-color: #172430;
+	}
+	.csh_naviation_links .span_nav font:first-child{
+		color: #FFFFFF;
+	}
+	/*contains Topic*/
+	.wh_related_links, .wh_child_links, .wh_topic_content .related-links{
+		background-color: #05141F;
+	}
+	.wh_child_links:before {
+		border-bottom: 1px solid #CDD0D2;
+	}
+	.related-links a, .related-links a:visited{
+		color: #FFFFFF;
+	}
+	footer .csh_naviation_links{
+		background-color: #05141F;
+	}
+	div.note_note,div.note_tip {
+		background-image: url(images/dark_images/icon_note.svg);
+	} 
+	div.note_caution {
+		background-image: url(images/dark_images/icon_caution.svg);
+	}
+	div.note_warning {
+		background-image: url(images/dark_images/icon_warning.svg);
+	}
+	
+	/*서치박스*/
+	.wh_search_textfield::placeholder,
+	.wh_search_textfield{
+		color: #FFFFFF;
+	}
+	div.header-right-container .wh_search_textfield:focus,
+	.wh_search_textfield.activeTextfield{
+		background-color: #172430;
+		border: 1px solid #828A90;
+	}
+	/*table*/
+	*[class~="topic/fn"][outputclass ~= 'table-fn'] a[class ~= "table-fn-link"]:before,
+	.table{
+		color: #FFFFFF;
+	}
+	.table > thead > tr > th {
+		background-color: #172430;
+		color: #B2B8BD;
+	}
+	.table > tbody > tr > td{
+		color: #E7E9EC;
+	}
+	/*검색 결과창*/
+	.page-link{
+		color: #FFFFFF !important;
+		background-color: #05141F !important;
+	}
+	
+	.wh_tile {
+		border: 1px solid #515b62;
+	}
+	.wh_tile:hover{
+		background-color: #697278;
+	}	
+	/* color => white */
+	/*
+	.wh_tile_image img {
+		filter: brightness(0) invert(1);
+	}
+	.wh_tile:hover .wh_tile_image img {
+		filter: none;
+	} */
+	.wh_tile_title a {
+		color: #ffffff;
+	}
+	.wh_tile:hover a{
+		color: #05141f
+	}
+	.wh_main_page_toc {
+		border: 1px solid #303438;
+	}
+	.wh_main_page_toc .wh_main_page_toc_accordion_header, 
+	.wh_main_page_toc > .wh_main_page_toc_entry{
+		border-bottom: 1px solid #303438;
+	}
+	.wh_main_page_toc_accordion_entries > * {
+		border-bottom: 1px solid #303438;
+	}	
+	/* 확장된 메뉴 top, bottom border 적용  */
+	.wh_main_page_toc_accordion_header.expanded{
+		border-bottom: 1px solid #515b62;
+	}
+	.wh_main_page_toc_accordion_header.expanded + .wh_main_page_toc_accordion_entries .wh_main_page_toc_entry:last-child{
+		border-bottom: 1px solid #515b62;
+	}	
+	.wh_child_links:before {
+		border-bottom: 1px solid #515b62;
+	}	
+	.wh_child_links li > div {
+		border-bottom: 1px solid #303438;
+	}
+	.table > thead > tr > th, .table > colgroup + thead > tr:first-child > th {
+		border-color: #515b62;
+	}
+	.table > thead > tr > th, .table > colgroup + thead > tr:first-child > th, .table > tbody > tr > td {
+		border-color: #303438;
+	}	
+	.wh_search_rm_button {
+		content: url("images/dark_images/icon_remove_txt.svg");
+	}	
+	.wh_tile_image img {
+		filter: invert(100);
+	}
+	html[webhelp_embeded='true'] {
+		.breadcrumb-sticky .btn_nav img{
+			content: url("images/dark_images/icon_menu.svg");
+		}
+	}
+} /*끝*/

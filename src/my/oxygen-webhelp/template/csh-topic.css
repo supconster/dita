@@ -1,0 +1,872 @@
+/*
+ * topic page > content 영역 최대 크기/위치 설정
+ */
+ /* 모바일 */
+@media (hover: none) and (pointer: coarse) {
+	
+	.wh_topic_page .wh_content_area {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	} 
+/* 	voice일 때 footer처럼 생김 
+	#wh_topic_container, .wh_content_area{
+		margin-bottom: 50px;
+	} */
+	
+/* 	중복 
+	div.note {
+		margin-top: 20px;
+		padding-inline-start: 0 !important;
+	    padding: 0.75em 0 0.75em 0;
+	} */
+}
+@media screen and (max-width: 640px){
+	.fontChangeDiv {
+		display: block !important;
+		text-align: right;
+		padding-left: 15px;
+     	padding-right: 15px;
+     	width: 100%;
+	}
+	html[dir='rtl'] .fontChangeDiv{
+		text-align: left !important;
+	}
+	.wh_navigation_links span.navheader span {
+    	width: 42px;
+    	height: 42px;
+	}	
+	.wh_navigation_links span.navprev {
+		background-image: url('images/mobile_page_prev.svg'); 
+	}
+	.wh_navigation_links span.navnext {
+		background-image: url('images/mobile_page_next.svg');
+	}
+	.wh_navigation_links span.navprev.hover,
+	.wh_navigation_links span.navnext.hover{
+		opacity: 100%;
+	}
+	.csh_naviation_links .arrowBack:hover,
+	.csh_naviation_links .arrowForward:hover{
+		border: .5px solid;
+		color: #05141F;
+	}
+	body .wh_navigation_links {
+		bottom: 9em;
+	}
+	
+}
+/* 
+ * 페이지에 스크롤바 유무에 따라 padding값이 달라 
+ * 해상도가 작아지면 정렬이 틀어지기에 
+ */
+@media screen and (max-width: 1030px){
+	.wh_content_area{
+		padding-left: 15px !important;
+     	padding-right: 15px !important;
+	}
+}
+ /* wh_content_area에 하단 페딩 추가  
+ *  본문 사이즈
+ *
+ * 화면이 작아졌을 때 topic페이지와 breadcrumb
+ * 각격 맞추기 위해 왼쪽, 오른쪽 padding 0 
+ */
+ .wh_topic_page .container-fluid {
+	max-width: inherit;
+	padding: 5px 0 5px 0;
+	overflow-x: hidden;
+}
+.wh_topic_page .wh_content_area {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 150px;
+    transition: left 0.4s ease-in-out;
+	position: relative;
+	left: 0;
+}
+
+/* 본문 페이지 이동 버튼 */
+/*
+.wh_navigation_links {
+	 position: fixed;
+	 top: 83.5%;
+	 left: 0;
+	 width: 100%;
+	 height: 0; 
+}*/
+.wh_navigation_links {
+	 position: relative;
+	 bottom: 12em;
+	 left: 0;
+	 width: 100%;
+	 height: 0; 
+}
+
+
+/* .wh_navigation_links .navheader {
+ display: flex;
+ align-items: center; *//* Center vertically
+ justify-content: space-between; Align buttons to left and right
+ margin: 0 16px 0 16px; 
+} */
+.wh_navigation_links .navheader span {
+	 width: 80px;
+	 height: 80px;
+	 background-color: #05141F;
+	 color: #fff;
+	 text-align: center;
+	 line-height: 50px;
+	 /* display: none; */
+	 display: block;
+	 opacity: 40%;
+}
+.wh_navigation_links .navprev {
+	 margin-right: auto; /* Align to left */
+	 background-image: url('images/btn_page_perv.svg'); 
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 float: left;
+	 margin-left: 16px;
+}
+@media (hover: hover){
+	.wh_navigation_links .navprev.hover,
+	.wh_navigation_links .navnext.hover{
+		opacity: 100%;
+	}
+}
+.wh_navigation_links .navnext {
+	 margin-inline-start: 10px;
+	 background-image: url('images/btn_page_next.svg');
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 /* float: right; */
+	 float: left;
+	 margin-right: 16px;
+}
+
+/* 파란 화살표 */
+.wh_navigation_links a:before {
+	content: " ";
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+/* contains topics*/ 
+.wh_related_links, .wh_child_links, .wh_topic_content .related-links {
+    background-color: #fff;
+	padding: 1.5em 0 1.5em 0;
+    margin-top: 1.5em;
+}
+.wh_child_links {
+	line-height: 1.4;
+	display: none;
+}
+.wh_child_links:before {
+	width: 100%;
+	display: inline-block;
+	font-weight: bold;
+	border-bottom: 1px solid #37434B;
+	padding-top: 6px;
+    padding-bottom: 6px;
+    
+}
+.wh_child_links li .wh-expand-btn, 
+.wh_child_links li .wh-tooltip {
+	display: none !important;	
+}
+.wh_child_links li > div {
+	border-bottom: 1px solid #CDD0D2;
+	padding-top: 6px;
+    padding-bottom: 6px;	
+    
+}
+/*
+.related-links a {
+	padding-left: 0.75em;
+}
+*/
+.related-links a, .related-links a:visited {
+    color: #05141F;
+    padding-bottom: .3em;
+    padding: 0;
+}
+/*
+ * 최하위 topic - 페이지 이동을 위한 원모양 아이콘 표시
+ */
+#wh_publication_toc, #wh_close_publication_toc_button {
+	display: none !important;
+}
+.csh_naviation_links {
+    width: calc(100% - 250px);
+    background-color: #fff;
+    min-height: 30px;
+    text-align: center;
+    width: 100%;
+	display: none;
+}
+.csh_naviation_links > div {
+    /*display: flex;
+    justify-content: center; */
+	margin-top: 5px;
+}
+
+/* 
+ *  topic_page pagination - Dot version
+ */
+/*
+.csh_naviation_links .page-marker {
+    display: inline-block;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #E7E9EC;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+} 
+.csh_naviation_links .page-marker.active {
+    background-color: #05141F;
+}
+*/
+/* 
+ *  topic_page pagination - line version
+ */
+/*
+.csh_naviation_links .page-marker {
+    display: inline-block;
+    height: 4px;
+    width: 48px;
+    background-color: #E7E9EC;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.csh_naviation_links .page-marker.active {
+    background-color: #05141F;
+}*/
+/* 
+ *  topic_page pagination - number version
+ */
+ 
+.span_nav{
+	margin: 5px 2px 0;
+	padding: 0 3px;
+}
+.span_nav span {
+	color: #9BA2A9;
+	margin: 0 2px;
+}
+.csh_naviation_links > div {
+    display: flex;
+    justify-content: center;
+}
+.csh_naviation_links .span_nav font{
+	margin: 0 1px;
+}
+.csh_naviation_links .span_nav font:first-child{
+	font-weight: bold;
+}
+.csh_naviation_links .span_nav font:not(:first-child){
+	color: #9BA2A9;
+}
+.csh_naviation_links .arrowBack{
+	content: url(images/search_arrowBack.svg);
+	position:relative;
+	top: 3px;
+	margin: 0 12px 3px;
+}
+.csh_naviation_links .arrowBack.disable_back{
+	content: url(images/search_arrowBack_dis.svg);
+}
+.csh_naviation_links .arrowForward{
+	content: url(images/search_arrowForward.svg);
+	position:relative;
+	top: 3px;
+	margin: 0 12px 3px;
+}
+.csh_naviation_links .arrowForward.disable_forward{
+	content: url(images/search_arrowForward_dis.svg);
+}
+/* 테이블 관련  */
+.table {
+	width: 100%;
+	color: #05141F;
+	
+}*[class~="topic/table"][class ~= 'frame-all']{
+	border: 0;
+}
+*[class~="topic/table"][class ~= 'formatc'] > *[class~="topic/thead"],
+*[class~="topic/table"][class ~= 'formatd'] > *[class~="topic/thead"]{
+	border: 0;
+}
+*[class~="topic/table"][class ~= 'formatc'] > *[class~="topic/thead"] > *[class~="topic/row"],
+*[class~="topic/table"][class ~= 'formatd'] > *[class~="topic/thead"] > *[class~="topic/row"] {
+	border-bottom: 0;
+}
+*[class~="topic/table"][class ~= 'formatc'] > *[class~="topic/tbody"] > *[class~="topic/row"],
+*[class~="topic/table"][class ~= 'formatd'] > *[class~="topic/tbody"] > *[class~="topic/row"] {
+	border-left: 0;
+	border-right: 0;
+}
+.table-container{
+	overflow-x: auto;
+}
+.table th, .table td{
+	vertical-align: middle; 
+}
+html:not([dir="rtl"]) .table > tbody > tr > td:last-child:not(:only-child){
+	border-left: 1px solid #CCD0D3;
+}
+table > caption {
+	padding-left: 0;
+    white-space: normal;
+}
+table .desc {
+    font-style: normal;
+	font-size: 0.9em;
+}
+.table > thead > tr > th {
+	vertical-align: middle;
+	background-color: #FAFAFB;
+	font-weight: bold;
+	text-align: center;
+	color: #636B74;
+}
+.table > thead > tr > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > tbody > tr > td {
+	border-color: #CCD0D3;
+	padding: 0.5em;
+	border-top: 1px solid #CCD0D3;
+	border-bottom: 1px solid #CCD0D3;
+}
+.colsep-1 {
+    border-right: 1px solid #CCD0D3;
+}
+
+.thead .blockgraphic{
+	text-align: center;
+}
+.table thead th{
+	border-bottom: 1px solid #CCD0D3;
+}
+/* formatc_middle 
+ * 테이블 헤드O, 테이블 본문 가로 테두리 X
+ */
+table[class~="formatc_middle"] > *[class ~= "topic/tbody"] > *[class ~= "topic/row"],
+table[class~="formatc_middle"] > *[class ~= "topic/tbody"] > *[class ~= "topic/row"]> *[class ~= "topic/entry"]:not([colspan]){
+	border-top: 0;
+	border-bottom: 0;
+}
+table[class~="formatc_middle"] > *[class ~= "topic/tbody"] > *[class ~= "topic/row"]:last-child{
+	border-bottom: 1px solid #CCD0D3;
+}
+/* formatc_none 
+ * 테이블 헤드X, 테이블 전체 테두리 X
+ */
+table[class~="formatc_none"] *[class~="topic/row"], 
+table[class~="formatc_none"] > *[class ~= "topic/tbody"] > *[class~="topic/row"] td{
+	border: 0;
+	border-bottom:0;
+	border-left:0 !important;
+}
+/* formatc_high 
+ * 테이블 헤드X, 테이블 본문 가로 테두리X
+ */
+table[class~="formatc_high"] > *[class ~= "topic/tbody"] > *[class~="topic/row"],
+table[class~="formatc_high"] > *[class ~= "topic/tbody"] > *[class~="topic/row"] > td:not([colspan]){ 
+	border-top: 0;
+	border-bottom: 0;
+}
+table[class~="formatc_high"] > *[class ~= "topic/tbody"]:first-child,
+table[class~="formatc_high"] > *[class ~= "topic/tbody"]:last-child{
+	border-top: 1px solid #CCD0D3;
+	border-bottom: 1px solid #CCD0D3;
+}
+/* formatc_width 
+ * 테이블 헤드X, 테이블 본문 세로 테두리X
+ */
+table[class~="formatc_width"] .colsep-1:not([rowspan]){
+	border-right: 0;
+} 
+table[class~="formatc_width"] > *[class ~= "topic/tbody"] > *[class~="topic/row"] td{
+	border-left:0 !important;
+}
+/* 
+ * 본문 
+ */ 
+
+/* 단어 내 줄바꿈 허용 */
+.p {
+    margin: .57em 0 .57em 0;
+}
+p[class ~= "topic/p"][importance="default"]:before {
+	content: "* ";
+	vertical-align: text-top;
+}
+p[class ~= "topic/p"][importance="high"] {
+	font-weight: bold;
+}
+dl, ol, ul {
+    padding-inline-start: 0px;
+}
+
+.note__content{
+	padding: 1em; 
+}
+
+.wh_expand_btn {
+    display: none;
+}
+.figcap{
+    text-align: center;
+    margin: 0.57em 0 0.57em 0;
+}
+
+/* note, caution, warning 기호 변경  */
+div.note {
+	margin-top: 20px;
+	padding-inline-start: 0 !important;
+	padding: 0.75em 0 0.75em 0;
+}
+
+div.note_note,div.note_tip {
+	background-image: url(images/icon_note.svg);
+	background-size: 1.43em;
+    background-position-y: 1.35em;
+    background-position-x: 0;
+	
+} 
+div.note_caution {
+	background-image: url(images/icon_caution.svg);
+	background-size: 1.43em;
+    background-position-y: 1.35em;
+	background-position-x: 0;
+}
+
+div.note_warning {
+	background-image: url(images/icon_warning.svg);
+	background-size: 1.43em;
+    background-position-y: 1.35em;
+	background-position-x: 0;
+}
+.font1 div.note > span.note__title{ 
+	padding-left: 3em;
+}
+
+div.note > span.note__title{
+	flex-shrink: 0;
+    font-size: 1.43em;
+    line-height: 2em;
+    height: 2em;
+    font-weight: bold;
+	padding-inline-start: 1.2em;
+}
+div.note > div.note__content {
+	background-color: #EFEFEF;
+	
+}
+/* topic_content 최상단 제목 */
+/* .topictitle3 {
+	margin: 0.5em 0 0.5em 0;
+    border-left: none;
+    padding-left: 0;
+    font-weight: bold;
+} */
+/* topic_content 소목차 간격 */
+.sectiontitle {
+	margin: 0.5em 0 0.5em 0;
+    padding-top: 5px;
+    padding-bottom: 0;
+    padding-left: 0 !important;
+}
+/*
+ OL counter for callout_continue
+*/
+div.wh_content_area {
+  counter-reset: callout-counter;
+}
+*:has(> ol[class~="callout"]),
+ol[class~="callout"] ~ ol[class~="callout"]{
+  counter-reset: callout-counter;
+}
+*:has(>ol[class="- topic/ol ol"]),
+*:has(>ol[class~="overview"]),
+ol ~ ol {
+  counter-reset: list-number;
+}
+
+/*들여쓰기 수정*/
+/* 2레벨 들여쓰기 */
+li[class~="topic/li"] > ul[class~="topic/ul"],
+li[class~="topic/li"] > ol[class~="topic/ol"]{
+	padding-inline-start: 0;
+	margin-inline-start: 1.2em;
+}
+ /* section태그 하위 sectiontitle과 ul,ol 동일  */
+/*
+section[class~="topic/section"] > ul[class~="topic/ul"],
+section[class~="topic/section"] > ol[class~="topic/ol"]{
+	margin-inline-start: 1.3em;
+} */
+
+.callout > li > p, 
+.callout_continue > li > p, 
+.callout_overview > li > p,
+.overview > li > p {
+	margin: .57em 0 .57em 0;
+	margin-inline-start: 2.2em; 
+}
+/* callout 하위의 ul은 2레벨 */
+.callout > li[class~="topic/li"] > ul[class~="topic/ul"],
+.callout > li[class~="topic/li"] > ol[class~="topic/ol"]{
+	padding-inline-start: 30px !important;
+} 
+ul[class ~= "topic/ul"], ol[class ~= "topic/ol"] {
+  	margin: 0.57em 0 0.57em 0;
+    margin-inline-start: 1.7em;
+}
+ol {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 8px;
+}
+ol.callout_continue {
+	list-style: none;
+	counter-reset: none;
+}
+
+ol.callout_continue { 
+    /*counter-reset: lcallout-counter;*/
+	list-style-type:none;
+    padding-inline-start: 0;
+    margin-inline-start:0;
+}
+ol.callout > li::before {
+    content: "(" counter(callout-counter) ")";
+    display: inline-block;
+	float:left;
+	width: 1.9em;
+    text-align: right;
+}
+ol:not([class*="callout"]) > *[class~="topic/li"] {
+    counter-increment: list-number; 
+}
+ol.continue {
+    counter-reset: none;
+}
+ol.continue {
+    counter-reset: none;
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-inline-start: -0.2em;
+}
+ol.continue > li::before {
+    content: counter(list-number) ".";
+    display: inline-block;
+    float: left;
+    width: 1.6em;
+    text-align: right;	
+}
+ol.continue > li > p {
+    margin: .57em 0 .57em 0;
+    margin-inline-start: 2em;
+}
+ol.callout, ol.callout_overview { 
+	counter-reset: list-number;
+	list-style-type:none;
+	padding-inline-start:0;
+	margin-inline-start:0;
+}
+
+ol.callout_overview > li::before {
+    content: "(" counter(list-number) ")";
+    display: inline-block;
+	float:left;
+	width: 1.9em;
+    text-align: right;
+}
+ol.callout > li::before,
+ol.callout_continue > li {
+    counter-increment: callout-counter; 
+}
+ol.callout_continue > li::before {
+    content: "(" counter(callout-counter) ")";
+    display: inline-block;
+    float:left;
+	width: 1.9em;
+    text-align: right;
+}
+ol.overview { 
+	list-style-type:none;
+	padding-inline-start:0;
+	margin-inline-start:0;
+}
+
+ol.overview > li::before {
+    content: "(" counter(list-number) ")";
+    display: inline-block;
+	float:left;
+	width: 1.9em;
+    text-align: right;
+}
+@supports (-webkit-touch-callout: none) {
+	*:has(> ol[class~="callout"]),
+	ol[class~="callout"] ~ ol[class~="callout"]{
+	  counter-reset: callout-counter;
+	}
+	*:has(>ol[class="- topic/ol ol"]),
+	*:has(>ol[class~="overview"]),
+	ol ~ ol {
+	  counter-reset: list-number;
+	}
+	ol:not([class*="callout"]) > *[class~="topic/li"] {
+	    counter-increment: list-number; 
+	}
+	ol.continue {
+	    counter-reset: none;
+	    list-style-type: none;
+	    padding-inline-start: 0;
+	    margin-inline-start: -0.4em;
+	}
+	ol.continue > li::before {
+	    content: counter(list-number) ".";
+	    display: inline-block;
+	    color: #000;
+	    float: left;
+	    width: 1.6em;
+	    text-align: right;	
+	}
+	ol.continue > li > p {
+	    margin: .57em 0 .57em 0;
+	    margin-inline-start: 2em;
+	}
+	
+	ol.callout_continue { 
+		list-style: none;
+		counter-reset: none;
+		list-style-type:none;
+		padding-left:0px;
+	}
+	ol.callout > li::before {
+	    content: "(" counter(callout-counter) ")";
+	    display: inline-block;
+		float:left;
+		width: 1.9em;
+	    text-align: right;
+	}
+	ol.callout, ol.callout_overview { 
+		list-style-type:none;
+		padding-inline-start:0px;
+		margin-inline-start:0;
+	}
+	ol.callout_overview > li::before {
+	    content: "(" counter(callout-counter) ")";
+	    display: inline-block;
+		float:left;
+		width: 1.9em;
+	    text-align: right;
+	}
+	ol.callout > li::before,
+	ol.callout_continue > li {
+	    counter-increment: callout-counter; 
+	}
+	ol.callout_continue { 
+		list-style-type:none;
+	    padding-inline-start: 0;
+		margin-inline-start:0;
+	}
+	ol.callout_continue > li::before {
+	    content: "(" counter(callout-counter) ")";
+	    display: inline-block;
+	    float:left;
+		width: 1.9em;
+	    text-align: right;
+	}
+	ol.overview { 
+		list-style-type:none;
+	    padding-inline-start: 0;
+		margin-inline-start:0;
+	}
+	ol.overview > li::before {
+	    content: "(" counter(list-number) ")";
+	    display: inline-block;
+	    float:left;
+		width: 1.9em;
+	    text-align: right;
+	}	
+}
+
+/*
+/*
+ * override "링크" style
+ */
+.wh_tile:hover a{
+    color: #FFFFFF
+} 
+/*abbreviation 들여쓰기 수정  */
+.dl {
+	padding: 0;
+}
+/* .figgroup {
+	text-align: center;
+} */
+/* 테이블 tr > td */
+figure{
+	margin: 0;
+}
+/*
+ * Image 아래 파일명 표시
+ */
+div.imagecenter {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+img.imagecenter {
+	margin-bottom: 0;
+}
+/*반응형 본문내 이미지 크기 대응  */
+div.imagecenter > img,
+p > img{
+	height: auto;
+}
+div.imageleft{
+	display: table;
+	text-align: center;
+}
+.imageleft img{
+	margin-bottom: 0;
+}
+*[class ~= "topic/imagename"] {
+	color: #05141F;
+	margin: auto;
+	font-size: 0.6em;
+	max-width: 100%;
+	text-align: center !important;
+}
+
+/* wh_topic_page 네비게이션 버튼 애니매이션효과 */
+.wh_topic_page .wh_content_area.rightClass{
+	left: -3500px;
+} 
+
+.wh_topic_page .wh_content_area.leftClass{
+	left: +3500px;
+} 
+
+/* 
+Climate control system
+> Regulations div태그 추가 -->
+ */
+
+/* Vehicle controls > Regulations 
+ * img와 text가 함께있는 태그 
+ * MV_EV_EG_24MY에는 blockgraphic 클래스 없음
+ */
+.blockgraphic > img{
+	display:flex; 
+}
+.blockgraphic > *[class~="topic/image"]{
+    margin-bottom: .57em;
+}
+.callout .blockgraphic{
+	margin-inline-start: 2em;
+}
+.related-links li .topicref .title a {
+	text-decoration: underline;	
+}
+li .topicref .title a:hover{
+	text-decoration: underline;	
+}
+/*
+ * footnote - style
+ */
+/* Customize footnotes display, below the table. */
+*[class~="table-fn-container"] {
+ counter-reset: table-footnote;
+}
+*[class~="topic/fn"][outputclass ~= 'table-fn'] {
+  counter-increment: table-footnote;
+}
+a[class ~= 'topic/xref'][type="fn"] {
+	padding: 0 2px 0 2px;
+	font-family: inherit;
+	color: inherit !important;
+}
+a[class ~= 'topic/xref'][type="fn"]:before {
+    content: none;
+}
+*[class~="topic/fn"][outputclass ~= 'table-fn'] a[class ~= "table-fn-link"]:before {
+  content: counter(table-footnote) ". ";
+}
+*[class~="topic/fn"] a[class ~= "table-fn-link"],
+*[class~="topic/fn"] a[class ~= "fn-link"] {
+	float: left;
+}
+*[class~="topic/fn"] > *[class ~= "topic/p"] {
+	margin-left: 16px;
+}
+*[class~="topic/fn"] > *[class ~= "topic/ul"],
+*[class~="topic/fn"] > *[class ~= "topic/ol"] {
+	padding-inline-start:25px;
+}
+/* title 관련, contains topics 이미지, toc의 이미지 텍스트 크기와 맞추기 */
+.topictitle1 > img,
+.topictitle2 > img,
+.topictitle3 > img,
+.topictitle4 > img, 
+.topictitle5 > img,
+.topictitle6 > img,
+.topictitle7 > img,
+.sectiontitle > img,
+*[class~="topic/related-links"] a > img,
+.wh_breadcrumb a > img,
+.wh_main_page_toc_entry a >img,
+.wh_main_page_toc_accordion_header a > img{
+	width:auto;
+	height: 1em;
+}
+/*  wh_breadcrumb > 타이틀 간격 맞추기 
+ * rtl일 때 wh_toc이 .title에 padding-right가 있음 
+ */
+.title{
+	padding-inline-start: 0 !important;
+}
+/* 본문 이미지 클릭시 배경 투명도 70% 
+ * 아이콘 변경
+ */
+div.modal{
+	background-color: rgba(0, 0, 0, 0.7) !important;
+}
+span.oxy-icon-remove{
+	content: url(images/icon_close.svg); 
+	width:40px;
+	height:40px;
+	top: 15px;
+}
+/*본문 하이퍼링크 색상  
+ * 
+ */
+a[class ~= 'topic/xref']{
+	color: #4367F6;
+}
+/*  light.css 막기 */
+a, a:hover{
+	color: unset;
+}
+@media (hover: hover){
+	a[class ~= 'topic/xref']:hover{ 
+		color: #4367F6;
+		text-decoration: underline;
+	}
+}
+
+/* symbal : round border */
+.wh_topic_content img:not(figure img) {
+	border-radius : 14%;
+}

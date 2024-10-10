@@ -1,0 +1,1 @@
+define({"topics":[{"title":"ការពិពណ៌នាអំពីបន្ទះហ្វុយហ្ស៊ីប\/រីលេ","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/idEmpty00063.html","attributes":{"data-id":"idEmpty00063"},"menu":{"hasChildren":false},"tocID":"idEmpty00063-d1148e1152","topics":[]}]});

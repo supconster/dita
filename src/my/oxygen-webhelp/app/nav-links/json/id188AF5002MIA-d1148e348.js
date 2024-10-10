@@ -1,0 +1,1 @@
+define({"topics":[{"title":"ရှေ့ဘက်မှယာဉ်တိုက်မှုရှောင်ရှားရေး အကူအညီ (FCA) (ပေါင်းစပ်အာရုံခံမှု)","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/CACHIGIDF61.html","attributes":{"data-id":"CACHIGIDF61"},"menu":{"hasChildren":true},"tocID":"CACHIGIDF61-d1148e365","next":"CACHIGIDF61-d1148e365"}]});

@@ -1,0 +1,1 @@
+define({"topics":[{"title":"មុខងារ Forward Collision-Avoidance Assist (ជំនួយបញ្ចៀសការប៉ះទង្គិចខាងមុខ) ត្រូវបានបិទ","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/idEmpty00027.html","attributes":{"data-id":"idEmpty00027"},"menu":{"hasChildren":false},"tocID":"idEmpty00027-d1148e595","topics":[]}]});

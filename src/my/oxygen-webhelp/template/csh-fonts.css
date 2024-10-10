@@ -1,0 +1,224 @@
+/*
+ * 기아 폰트 정의
+ */
+@font-face {
+    font-family: "KiaSignatureTTF";
+    font-weight: bold;
+    src: url(webfonts/KiaSignatureFixBold.woff);
+}
+/* Regular */
+@font-face {
+    font-family: "KiaSignatureTTF";
+    font-weight: normal;
+    src: url(webfonts/KiaSignatureFixRegular.woff);
+}
+@font-face {
+    font-family: "KiaSignatureTTF";
+    font-weight: 200;
+    src: url(webfonts/KiaSignatureFixLight.woff);
+}
+/* arbic, hebrew, thai */
+@font-face {
+	font-family: 'Tahoma';
+	src: url(webfonts/Tahoma_font.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+/* nepali */
+@font-face {
+	font-family: 'Nirmala';
+	src: url(webfonts/Nirmala.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+/* taiwanese, china */
+@font-face {
+	font-family: 'microsoft-yahei';
+	src: url(webfonts/microsoft-yahei.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+/* 캄보디아  */
+@font-face {
+	font-family: 'hanuman';
+	src: url(webfonts/Hanuman-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+/* 미얀마  */
+@font-face {
+	font-family: 'Asoka-Myanmar';
+	src: url(webfonts/Asoka-Myanmar.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+/* 카자흐스탄  */
+@font-face {
+	font-family: 'segoe-ui';
+	src: url(webfonts/SEGOEUI.TTF);
+	font-weight: normal;
+	font-style: normal;
+}
+/*
+ * To change the font for the entire publication, not just an element
+ */
+/*아랍어, 히브리어, 태국, 베트남*/
+html:lang(ar),
+html:lang(he),
+html:lang(th),
+html:lang(vi) {
+	font-family:  "KiaSignatureTTF", Tahoma;
+}
+/* 네팔어 */
+html:lang(ne){
+	font-family:  "KiaSignatureTTF", Nirmala;
+}
+/* 타이완, 중국 */
+html:lang(zh){
+	font-family:  "KiaSignatureTTF", microsoft-yahei;
+}
+/* 캄보디아 */
+html:lang(km){
+	font-family:  "KiaSignatureTTF", hanuman;
+}
+/* 미얀마 */
+html:lang(my){
+	font-family:  "KiaSignatureTTF", Asoka-Myanmar;
+}
+/* 카자흐스탄 */
+html:lang(kk){
+	font-family:  "KiaSignatureTTF", segoe-ui;
+}
+
+html {
+	font-family:  "KiaSignatureTTF", sans-serif;
+	/* font-family:helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif; */
+	font-size: 14px;
+	line-height: 1;
+	hyphens: auto;
+	overflow-wrap: break-word;
+}
+body {
+    line-height: 1.2;
+    font-family: inherit;
+}
+
+.wh_topic_content, .wh_content_area, .wh_main_page_toc {
+    line-height: 1.4em;
+    color: #05141F;
+}
+.topictitle1, .topictitle2, .topictitle3, .topictitle4, .topictitle5, .topictitle6, .topictitle7 {
+    margin: 0.5em 0 0.5em 0;
+    font-weight: bold;	
+}
+.topictitle1, .topictitle1.level1 {
+    /*font-size: 2.85em;*/
+	font-size: 1.43em;
+}
+.topictitle2, .topictitle1.level2 {
+    font-size: 1.43em;
+}
+.topictitle3, .topictitle1.level3 {
+    /*font-size: 1.29em;
+    padding-bottom: 5px;*/
+	font-size: 1.43em;
+}
+.topictitle4, .topictitle1.level4,
+.topictitle5, .topictitle1.level5,
+.topictitle6, .topictitle1.level6,
+.topictitle7, .topictitle1.level7 {
+	/*
+    font-size: 1.14em;
+    padding-bottom: 5px;
+	border-bottom: 1px solid #000000;
+	*/
+	font-size: 1.43em;
+}
+.wh_tile_title, .main-top-message, .footer-copyright{
+	font-family: inherit;
+	font-size: .86em;
+} 
+.wh_tile_title a {
+	color: #05141F;
+	font-size: 1.33em;
+}
+.sectiontitle, .wh_child_links:before {
+	font-size: 1.14em;
+}
+.sectiondiv > .ph{
+	font-weight: bold;
+}
+p .term{
+	font-weight: bold;
+    font-style: inherit;
+}
+/* 타이틀 이탤릭체 제거 */
+.title .term{
+	font-style: inherit;
+}
+/*본문 하이퍼링크 색상  */
+a[class ~= 'topic/xref']{
+	color: #5D7D2B;
+}
+/* 미얀마 / 캄보디아 줄간 조정 */
+body:lang(my),
+h1:lang(my),h2:lang(my),h3:lang(my),h4:lang(my),h5:lang(my),h6:lang(my),
+body:lang(km),
+h1:lang(km),h2:lang(km),h3:lang(km),h4:lang(km),h5:lang(km),h6:lang(km) {
+  line-height: 1.4em;
+}
+
+/* smartphones, touchscreens */
+@media screen and (max-width: 640px) {
+	.topictitle1, .topictitle1.level1 {
+    	/*font-size: 2.85em;*/
+		font-size: 1.43em;
+	}
+	.topictitle2, .topictitle1.level2 {
+    	font-size: 1.43em;
+	}
+	.topictitle3, .topictitle1.level3 {
+	    /*font-size: 1.29em;
+	    padding-bottom: 5px;*/
+		font-size: 1.43em;
+	}
+	.topictitle4, .topictitle1.level4,
+	.topictitle5, .topictitle1.level5,
+	.topictitle6, .topictitle1.level6,
+	.topictitle7, .topictitle1.level7 {
+		/*
+    	font-size: 1.14em;
+    	padding-bottom: 5px;
+		border-bottom: 1px solid #000000;
+		*/
+		font-size: 1.43em;
+	}
+	.wh_tile_title, .main-top-message, .footer-copyright{
+		font-family: inherit;
+		font-size: .86em;
+		margin-left:0 !important;
+	} 
+	.wh_tile_title a {
+		color: inherit;
+		font-size: 0.99em;
+	}
+	/*contains Topics 하단  */
+	.wh_child_links li > div {
+		border-bottom: 1px solid #CDD0D2;
+		padding-top: 6px;
+	    padding-bottom: 6px;	
+	    font-size: 1em;
+	    
+	}
+	/*
+	 * overflow-wrap: anywhere; 테이블에만 넣을지 고려..(Forward/backward)
+	 */
+	html{
+		-webkit-hyphens: auto;
+		hyphens: auto;
+		overflow-wrap: break-word;
+	}
+}
+
+
+

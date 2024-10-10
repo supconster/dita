@@ -1,0 +1,1 @@
+define({"topics":[{"title":"ការព្រមាន និងការគ្រប់គ្រង","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/idEmpty00015.html","attributes":{"data-id":"idEmpty00015"},"menu":{"hasChildren":false},"tocID":"idEmpty00015-d1148e475","next":"idEmpty00015-d1148e475"}]});

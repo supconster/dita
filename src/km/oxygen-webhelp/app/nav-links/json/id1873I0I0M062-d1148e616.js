@@ -1,0 +1,1 @@
+define({"topics":[{"title":"ប្រព័ន្ធ Pan-European eCall","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/BAEBDFGGJ1.html","attributes":{"data-id":"BAEBDFGGJ1"},"menu":{"hasChildren":true},"tocID":"BAEBDFGGJ1-d1148e633","next":"BAEBDFGGJ1-d1148e633"}]});

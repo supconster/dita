@@ -1,0 +1,20 @@
+
+.wh_header,
+.wh_navigation_links,
+.wh_footer,
+.footer-container{
+	display: none;
+}
+.wh_content_area .hclass{
+	margin: 0.5em 0 0.5em 0;
+	font-size: 1.5em;
+	color: #000;
+	font-weight: bold;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 5px; 	
+}
+#videoDiv > a{
+	color: #5D7D2B;
+	display: inline;
+    margin-inline-start: 0.75em;
+}

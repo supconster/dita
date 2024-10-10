@@ -1,0 +1,1 @@
+define({"topics":[{"title":"စီစဉ်ထားသော ပြုပြင်ထိန်းသိမ်းမှုလုပ်ရန် ကြိုတင်သတိပေးချက်","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/idEmpty00044.html","attributes":{"data-id":"idEmpty00044"},"menu":{"hasChildren":false},"tocID":"idEmpty00044-d1148e843","topics":[]}]});

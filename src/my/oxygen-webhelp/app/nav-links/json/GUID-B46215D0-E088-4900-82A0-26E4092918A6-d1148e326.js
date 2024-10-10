@@ -1,0 +1,1 @@
+define({"topics":[{"title":"သတိပေးသည့်မီးများ","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/GUID-A53CB25C-EBEF-4B50-99FB-1EF2DC59F6BD.html","attributes":{"data-id":"GUID-A53CB25C-EBEF-4B50-99FB-1EF2DC59F6BD"},"menu":{"hasChildren":false},"tocID":"GUID-A53CB25C-EBEF-4B50-99FB-1EF2DC59F6BD-d1148e337","topics":[]}]});

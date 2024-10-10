@@ -1,0 +1,135 @@
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+	.wh_main_page .wh_content_area{
+		padding-top: 0px !important;
+	}
+	/*IE, 파이어폭스 스크롤바 숨기기  */
+	/*.container-fluid, 
+	.wh_content_area,
+	.table-container{
+		-ms-overflow-style: none !important;
+		scrollbar-width: none !important; 
+	} */
+	/* ( 크롬, 사파리, 오페라, 엣지 ) 스크롤바 숨기기 */
+	/*.wh_content_area::-webkit-scrollbar,
+	.container-fluid::-webkit-scrollbar,
+	.table-container::-webkit-scrollbar	{
+		display: none;
+	}*/
+}
+
+@media screen and (max-width: 640px) {
+   	/* 안드로이드 media(hover: none) 작동 x /스크롤바 숨기기
+	::-webkit-scrollbar-thumb{
+		display:none;
+	}*/
+    .wh_tiles .wh_tile{
+     	/* min-width: 320px !important; */
+     	width: 100%;
+     	margin: 0 0.5% 10px 0.5%;
+    }
+    .wh_main_page .wh_content_area{
+		padding-top: 0px !important;
+	}
+	.wh_main_page .wh_content_flex_container{
+		margin: auto !important;
+	}
+}
+@media screen and (max-width: 1024px) {
+    .wh_main_page .wh_content_flex_container{
+        width: 95%;
+    }
+}
+.wh_tiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: normal;
+    flex-wrap: wrap;
+	width: 100%;
+}
+/* 시안에는 width: 480px */
+.wh_tile {
+    border-radius: 4px;
+    width: 49%;
+    height: 65px;
+    min-height: 65px;
+    margin: 1em 0.5% 1% 0.5%;
+	border: 1px solid #cccccc;
+	background-color: #fff;
+	display: flex;
+    align-items: center;
+	
+}
+/*메인 페이지 아이콘 크기 */
+.wh_tile_image{
+	float: left;
+	padding-bottom: inherit
+}
+
+.wh_tile_image img {
+	width: 27px;
+    height: 27px;
+    
+}
+/* color => white */
+/* .wh_tile:hover .wh_tile_image img {
+	filter: brightness(0) invert(1);
+} */
+	
+.wh_tile_text {
+	padding-top: 7px;
+    padding-inline-start: 15px;
+}
+
+
+/*
+ * main page > content 영역 최대 크기/위치 설정
+ */
+.wh_main_page{
+	background-color: #F1F1F1;
+} 
+/* index페이지 스크롤 위치조정 */  
+.wh_main_page .wh_content_area {
+	width:100%;
+	padding-left: calc( 50% - 512px)!important;
+	padding-right: calc( 50% - 512px)!important;
+    padding-top: 63px;
+}
+
+.wh_main_page .wh_content_flex_container{
+	padding: 0;
+}
+	
+/*메인 타이틀 */
+.wh_tile:hover{
+	background-color: #697278;;
+	cursor: pointer;
+}
+.wh_tile:hover a{
+    color: #FFFFFF
+} 
+/* wh_tile과 간격조정과 동일한 width을 위해 margin 추가 
+ * 및 width: 100% 제거
+ */
+.main-top-message {
+    text-align: left;
+	margin: 1em 4px 10em 4px;
+    max-width: 1024px;
+    min-width: 320px;
+}
+
+/* 홈화면 breadcrumb 숨기기 */
+.wh_main_page .breadcrumb-sticky{
+	display: none;
+}
+.wh_tile_title > span > a {
+    text-align: left;
+}
+html[dir="rtl"] div.wh_tile_image{
+	float: right;
+}
+.wh_tile_shortdesc {
+	display: none;
+}

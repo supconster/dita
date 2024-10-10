@@ -1,0 +1,182 @@
+/* 영어 */
+.wh_child_links:lang(en):before{
+	content: "Contains Topics";
+}
+/* 러시아 */
+.wh_child_links:lang(ru):before {
+	content: "Содержит разделы";
+}
+/* 체코 */
+.wh_child_links:lang(cs):before{
+	content: "Obsahuje témata";
+}
+/* 네덜란드 */
+.wh_child_links:lang(nl):before{
+	content: "Bevat onderwerpen";
+}
+/* 프랑스 */
+.wh_child_links:lang(fr):before{
+	content: "Contient les sujets";
+}
+/* 독일 */
+.wh_child_links:lang(de):before{
+	content: "Enthält Themen";
+}
+/* 헝가리 */
+.wh_child_links:lang(hu):before{
+	content: "Témaköröket tartalmaz";
+}
+/* 이탈리아 */
+.wh_child_links:lang(it):before{
+	content: "Contiene argomenti";
+}
+/* 노르웨이 */
+.wh_child_links:lang(no):before{
+	content: "Inneholder emner";
+}
+/* 폴란드 */
+.wh_child_links:lang(pl):before{
+	content: "Zawiera tematy";
+}
+/* 포르투갈 */
+.wh_child_links:lang(pt):before{
+	content: "Contém tópicos";
+}
+/* 슬로베니아 */
+.wh_child_links:lang(sl):before{
+	content: "Vsebuje teme";
+}
+/* 스페인 */
+.wh_child_links:lang(es):before{
+	content: "Temas del contenido";
+}
+/* 스위스 */
+.wh_child_links:lang(sv):before{
+	content: "Innehåller ämnen";
+}
+/* 프랑스계 캐나다 */
+.wh_child_links:lang(fr-CA):before {
+	content: "Innehåller ämnen";
+}
+/* 아랍, 이집트 content 내용 동일*/
+.wh_child_links:lang(ar):before{
+	content: "يحتوي على موضوعات"; 
+}
+/* 중국 */
+.wh_child_links:lang(zh):before{
+	content: "包含主题";
+}
+/* 타이완 */
+.wh_child_links:lang(zh-TW):before {
+	content: "包含主題";
+}
+/* 한국 */
+.wh_child_links:lang(ko):before {
+	content: "주제를 포함";
+}
+/* 불가리아 */
+.wh_child_links:lang(bg):before{
+	content: "Съдържа теми";
+}
+/* 크로아티아 */
+.wh_child_links:lang(hr):before{
+	content: "Sadržava teme";
+}
+/* 덴마크 */
+.wh_child_links:lang(da):before{
+	content: "Indholdets emner";
+}
+/* 에스토니아 */
+.wh_child_links:lang(et):before{
+	content: "Sisaldab teemasid";
+}
+/* 필란드 */
+.wh_child_links:lang(fi):before{
+	content: "Sisältää aiheet";
+}
+/* 그리스 */
+.wh_child_links:lang(el):before{
+	content: "Περιέχει θέματα";
+}
+/* 라트비아 */
+.wh_child_links:lang(lv):before{
+	content: "Ietver tēmas";
+}
+/* 리투아니아 */
+.wh_child_links:lang(lt):before{
+	content: "Yra temų";
+}
+/* 루마니아 */
+.wh_child_links:lang(ro):before{
+	content: "Conține temele";
+}
+/* 슬로바키아 */
+.wh_child_links:lang(sk):before{
+	content: "Obsahuje témy";
+}
+/* 터키 */
+.wh_child_links:lang(tr):before{
+	content: "İçerilen Konular";
+}
+/* 히브리어 */
+.wh_child_links:lang(he):before{
+	content: "מכיל נושאים";
+}
+/* 카탈로니아 */
+.wh_child_links:lang(ca):before{
+	content: "Temes del contingut";
+}
+/* 스페인-칼리시아 */
+.wh_child_links:lang(gl):before{
+	content: "Temas do contido";
+}
+/* 바스크 */
+.wh_child_links:lang(eu):before{
+	content: "Gaiak ditu";
+}
+/* 우크라이나 */
+.wh_child_links:lang(uk):before{
+	content: "Містить теми";
+}
+/* 인도네시아 */
+.wh_child_links:lang(id):before{
+	content: "Berisi Berbagai Topik";
+}
+/* 타이 */
+.wh_child_links:lang(th):before{
+	content: "ประกอบด้วยหัวข้อ";
+}
+/*세르비아  */
+.wh_child_links:lang(sr):before {
+	content: "Sadrži teme";
+}
+/*말레이시아  */
+.wh_child_links:lang(ms):before{
+	content: "Mengandungi Topik";
+}
+/*필리핀*/
+.wh_child_links:lang(tl):before,
+.wh_child_links:lang(fil):before,
+.wh_child_links:lang(tag):before {
+	content: "Naglalaman ng mga Paksa";
+}
+/*네팔*/
+.wh_child_links:lang(ne):before{
+	content: "यी विषयहरू समावेश छ";
+}
+/* 베트남어 */
+.wh_child_links:lang(vi):before{
+	content: "Chứa các Chủ đề";
+}
+/* 캄보디아 */
+.wh_child_links:lang(km):before{
+	content: "មានប្រធានបទ";
+}
+/* 미얀마 */
+.wh_child_links:lang(my):before{
+	content: "ပါဝင်သော ခေါင်းစဉ်များ";
+}
+/* 카자흐스탄 */
+.wh_child_links:lang(kk):before{
+	content: "Тақырыптарды қамтиды";
+}

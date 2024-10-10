@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24">
+  <g id="btn_text_decrease" transform="translate(30)">
+    <path id="패스_5604" data-name="패스 5604" d="M28.273,3H3.727A2.705,2.705,0,0,0,1,5.667V24.333A2.705,2.705,0,0,0,3.727,27H28.273A2.705,2.705,0,0,0,31,24.333V5.667A2.705,2.705,0,0,0,28.273,3Z" transform="translate(-31 -3)" fill="#05141F"/>
+    <path id="패스_5601" data-name="패스 5601" d="M.99,16H2.969l1.039-2.813H8.628L9.659,16h1.979L7.336,5H5.292ZM4.6,11.592l1.66-4.549h.1l1.66,4.549H4.6ZM18.99,9.714v1.571H12.448V9.714Z" transform="translate(-24.99 2)" fill="#fff"/>
+  </g>
+</svg>

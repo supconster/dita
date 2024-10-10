@@ -1,0 +1,1 @@
+define({"topics":[{"title":"ကြံ့ခိုင်မှုထိန်းသိမ်းရန်လိုအပ်သည်","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/GUID-645DC845-C4AE-47F6-B860-9C6BD2FA8948.html","attributes":{"data-id":"GUID-645DC845-C4AE-47F6-B860-9C6BD2FA8948"},"menu":{"hasChildren":false},"tocID":"GUID-645DC845-C4AE-47F6-B860-9C6BD2FA8948-d1148e296","topics":[]}]});

@@ -1,0 +1,1 @@
+define({"topics":[{"title":"ပိုင်ရှင်က ပြုပြင်ထိန်းသိမ်းမှုလုပ်ရမည့် အချိန်ဇယား","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/idEmpty00038.html","attributes":{"data-id":"idEmpty00038"},"menu":{"hasChildren":false},"tocID":"idEmpty00038-d1148e773","next":"idEmpty00038-d1148e773"}]});

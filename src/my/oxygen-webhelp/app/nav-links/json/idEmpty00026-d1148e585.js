@@ -1,0 +1,1 @@
+define({"topics":[{"title":"ရှေ့ဘက်မှယာဉ်တိုက်မှုရှောင်ရှားရေး အကူအညီပိတ်ထားသည်","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/idEmpty00027.html","attributes":{"data-id":"idEmpty00027"},"menu":{"hasChildren":false},"tocID":"idEmpty00027-d1148e595","topics":[]}]});

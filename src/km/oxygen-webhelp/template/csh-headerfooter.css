@@ -1,0 +1,64 @@
+@media screen and (max-width: 640px){
+	body header.wh_header{
+		min-height: 56px;
+	}
+}
+.wh_header {
+	padding: 0;
+    min-height: 77px;
+    width: 100%;    
+    box-shadow: -12px 5px 20px #00000017;
+    margin-bottom: 20px;
+}
+.wh_footer {
+    
+	bottom: 0;
+    padding: 0px; 
+	width: 100%;
+	background-color: #05141F;
+    position: absolute;
+	z-index:1;
+}
+
+.footer-container{
+	width: 100%;
+	max-width: 1024px;
+	padding: 0 15px 0 15px;
+	display: flex;
+    align-items: center;
+	height: 40px;
+	
+}
+.footer-copyright {
+	text-align: left;
+	color: #FFFFFF;	
+}
+
+.header-left{
+	    line-height: 1;
+}
+
+html[webhelp_embeded='true'] {
+
+	/* webhelp_embeded가 ‘true’인 경우 헤더/푸터 숨김 등 적용될 스타일 적용 */
+	.wh_header {
+		display: none;
+	}
+	.wh_footer {
+		display: none;
+	}
+	.breadcrumb-sticky {
+		top: 0px;
+		margin-top: 20px;
+	}
+	.wh_main_page .wh_content_area {
+		margin-top: 20px;
+	}
+	.breadcrumb-sticky nav {
+		align-items: flex-start;
+	}
+	.btn_nav img {
+		margin-top: -4px;
+	}
+}
+

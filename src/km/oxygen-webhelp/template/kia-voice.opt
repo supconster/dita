@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publishing-template>
+    <name>Kia-HTML</name>
+    
+    <webhelp>
+        <tags>
+			<tag>Kia</tag>
+			<tag>Voice</tag>
+        </tags>
+
+		<!-- HTML page layout files -->
+		<html-page-layout-files>
+	        <page-layout-file page="main" file="page-templates/wt_index_voice.html"/>
+        <!--<page-layout-file page="topic" file="page-templates/wt_topic.html"/>-->
+	        <page-layout-file page="search" file="page-templates/wt_search.html"/>
+	        <page-layout-file page="index-terms" file="page-templates/wt_terms.html"/>
+	        <page-layout-file page="topic" file="page-templates/wt_topic_voice.html"/>
+		</html-page-layout-files>
+      
+        <!-- Resources like CSS, favicon, logo and others -->
+        <resources>
+            <!-- Main CSS file -->
+            <css file="light.css"/> 
+            <css file="csh-main.css"/> 
+            <css file="csh-fonts.css"/> 	  
+			<css file="csh-toc.css"/>
+			<css file="csh-breadcrumb.css"/>
+			<css file="csh-headerfooter.css"/>
+			<css file="csh-search.css"/>
+			<css file="csh-topic.css"/>
+			<css file="csh-style.css"/>
+			<css file="csh-voice.css"/>
+			
+			
+			<fileset>
+                <include name="images/**/*"/>
+                <include name="js/**/*"/>
+                <include name="js_voice/**/*"/>
+                <include name="webfonts/**/*"/>                
+                <include name="*"/>  
+			</fileset>			
+			<!--  
+			<js-amd-module file="js/template-main.js"/>
+			-->
+        </resources>
+        
+        <parameters>
+			<parameter name="webhelp.default.collection.type.sequence" value="yes"/>
+			<parameter name="webhelp.show.publication.toc" value="yes"/>	
+			<parameter name="webhelp.show.topic.toc" value="no"/>		
+			<parameter name="webhelp.show.child.links" value="no"/>
+			<parameter name="webhelp.show.print.link" value="no"/>
+			        
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="yes"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            
+            <parameter name="webhelp.enable.search.autocomplete" value="no"/>
+       		<parameter name="webhelp.fragment.header" type="filePath" value="html-fragment/header.xml" />
+            <parameter name="webhelp.fragment.footer" type="filePath" value="html-fragment/footer.xml" />
+            <parameter name="webhelp.fragment.before.search.input" type="filePath" value="html-fragment/before-search-input.xml"/>
+            <parameter name="webhelp.fragment.after.search.input" type="filePath" value="html-fragment/after-search-input.xml"/>
+            <!-- 검색 indexing 제외 대상 @class -->
+            <parameter name="webhelp.search.index.elements.to.exclude" value="div.wh_main_page_toc,div.wh_breadcrumb"/>
+            <parameter name="webhelp.fragment.before.main.content.area" type="filePath" value="html-fragment/voice-before.main.content.area.xml"/>
+          	<parameter name="webhelp.fragment.after.main.content.area" type="filePath" value="html-fragment/voice-main.content.area.xml" />
+            
+        </parameters>
+
+        <xslt>
+            <extension
+              id="com.oxygenxml.webhelp.xsl.dita2webhelp"
+              file="xsl/customDita2WebHelp.xsl"/>
+            <extension
+              id="com.oxygenxml.webhelp.xsl.createMainPage"
+              file="xsl/customMainPage.xsl"/>            
+            <extension
+              id="com.oxygenxml.webhelp.xsl.createSearchPage"
+              file="xsl/customSearchPage.xsl"/> 
+        </xslt>
+
+    </webhelp>
+</publishing-template>

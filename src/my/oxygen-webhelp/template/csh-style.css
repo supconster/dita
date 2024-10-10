@@ -1,0 +1,86 @@
+/*
+ * display: flex; WH-2759 Pushes footer at the bottom of the page.
+ * display: block; 으로 변경 => main page tile 넓이 조정
+ */
+ /*content와 footer 간격  */ 
+body {
+	display:flex;
+    min-height: 100%;
+} 
+html, body{
+	height: 100%;
+	overflow:hidden;
+}
+html{  
+	visibility: hidden;
+} 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.5em; /*세로스크롤바  */
+  height: 0.5em; /*가로스크롤바  */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaa; 
+ 
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0);
+}
+/*
+ * 화면 줄어들 경우 header, breadcrumb 영역 padding 조정
+ */
+@media screen and (max-width: 1920px) {
+	.wh_search_input, .breadcrumb-sticky > nav {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+}
+/*
+ * Hide the figure numbers, not useful in the context of a small topic.
+ */ 
+ 
+ @media screen {
+ 	.fig--title-label,
+	.fig--title-label-number,
+ 	.fig--title-label-punctuation {
+ 		display:none;
+ 	}
+ 	
+ 	.fig--title-label:after {
+ 		content:"";
+ 	}
+ }
+a[class = "btn_nav"] {
+	cursor: pointer;
+}
+/* 클립 모양 */
+.permalink{
+	display: none; 
+}
+/* 리스트 스타일 */
+ul{
+	list-style-type: disc;
+}
+ul>li>ul{
+	list-style-type: circle;
+}
+ul>li>ul>li>ul{
+	list-style-type: square;
+}
+ol{
+	list-style:auto;
+}
+
+ol>li>ol{
+	list-style:lower-alpha;
+}
+
+ol>li>ol>li>ol{
+	list-style:lower-roman;
+}
+
+
+
+

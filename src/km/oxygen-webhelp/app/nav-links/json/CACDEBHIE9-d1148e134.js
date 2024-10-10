@@ -1,0 +1,1 @@
+define({"topics":[{"title":"លក្ខណៈពិសេសនៃស្បែកកៅអី","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/id19671I006CT.html","attributes":{"data-id":"id19671I006CT"},"menu":{"hasChildren":false},"tocID":"id19671I006CT-d1148e144","topics":[]}]});

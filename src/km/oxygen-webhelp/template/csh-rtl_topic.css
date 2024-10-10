@@ -1,0 +1,105 @@
+/* right to left language */
+/* nav 단독으로 있어야함.. */
+html[dir='rtl'] .wh_navigation_links .navheader span{
+	transform: scaleX(-1);
+}
+html[dir='rtl'] .wh_navigation_links .navprev{
+	 margin: 0 16px 0 0;
+	 float: right;
+}
+html[dir='rtl'] .wh_navigation_links .navnext{
+	 margin-right: 10px;
+	 float: right; 
+}
+html[dir='rtl'] .csh_naviation_links > div {
+	text-align: center;
+}
+/* 위치 조정 단독*/
+html[dir='rtl'] div.note_note, 
+html[dir='rtl'] div.note_tip, 
+html[dir='rtl'] div.note_warning, 
+html[dir='rtl'] div.note_caution{
+	background-position: top 1.3em right 0.1em !important;
+    padding: 0.75em 0 0.75em 0;
+}
+
+html[dir='rtl'] ol.callout > li::before,
+html[dir='rtl'] ol.callout_continue > li::before,
+html[dir='rtl'] ol.overview > li::before,
+html[dir='rtl'] ol.continue > li::before {
+	float:right;
+	text-align: left;
+}
+
+html[dir='rtl'] .figcap, 
+html[dir='rtl'] .figdesc > p{
+    text-align: center !important;
+}
+/* callout과  marker와 간격 동일*/
+/* html[dir='rtl'] ol.callout, 
+html[dir='rtl'] ol.callout_overview{
+	margin-right: 5px;
+}  */
+/*단독  */
+html[dir='rtl'] *[class~="topic/fn"] a[class ~= "table-fn-link"],
+html[dir='rtl'] *[class~="topic/fn"] a[class ~= "fn-link"] {
+	float: right;
+	width: 20px;
+}
+/* wh_topic_page 네비게이션 버튼 애니매이션효과 */
+html[dir='rtl'] .wh_topic_page .wh_content_area.rightClass{
+	left: +3500px;
+}
+html[dir='rtl'] .wh_topic_page .wh_content_area.leftClass{
+	left: -3500px;
+} 
+/* thead 제목 가운데 정렬 */
+html[dir='rtl'] .thead p{
+	text-align: center;
+}
+html[dir='rtl'] .align-center p,
+html[dir='rtl'] .align-center > .p{
+	text-align: center;
+}
+/* rtl일때 테이블 border */
+
+html[dir='rtl'] .table thead > tr > th:not(:first-child),
+html[dir='rtl'] .table > tbody > tr > td:not(:first-child){
+	
+	border-right: 2px solid #dcdddd;
+} 
+html[dir='rtl'] .colsep-1{
+	border-right:0;
+}
+html[dir='rtl'] .table thead > tr > th:first-child,
+html[dir='rtl'] .table tbody > tr > td:not(:last-child){
+	border-right: 0;
+	border-left: 2px solid #dcdddd;
+}
+html[dir='rtl'] .table > tbody >tr:not(:first-child) > td:not(:first-child):not(:last-child){
+	border-left: 2px solid #dcdddd;
+}
+html[dir='rtl'] table[class~="formatc_none"] *[class~="topic/row"] td{
+	border-left: 0 !important;
+	border-right: 0 !important;
+}
+html[dir='rtl'] table[class~="formatc_width"] *[class~="topic/row"] *[class~="topic/entry"]{
+	border-left: 0 !important; 
+	border-right: 0;
+}
+html[dir='rtl'] table[class~="formatc_width"] *[class~="topic/row"] *[class~="topic/entry"][rowspan]{
+	border-left: 2px solid #dcdddd !important;
+}
+/* topic page - navigaion 화살표 */
+html[dir='rtl'] .csh_naviation_links .arrowBack{
+	content: url(images/search_arrowForward.svg);
+}
+html[dir='rtl'] .csh_naviation_links .arrowBack.disable_back{
+	content: url(images/search_arrowForward_dis.svg);
+}
+html[dir='rtl'] .csh_naviation_links .arrowForward{
+	content: url(images/search_arrowBack.svg);
+}
+html[dir='rtl'] .csh_naviation_links .arrowForward.disable_forward{
+	content: url(images/search_arrowBack_dis.svg);
+}

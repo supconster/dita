@@ -1,0 +1,50 @@
+@media (hover: none) and (pointer: coarse){
+	html[dir='rtl'] #searchForm{
+		position: relative;
+	}
+	html[dir='rtl'] .wh_search_textfield{
+		margin-left: 0px; 
+	}
+}
+
+/* right to left language */
+html[dir='rtl'] .wh_search_textfield{
+	 
+	line-height:2em;
+	margin-left:0px;
+	right:auto; 
+	left: -5px; 
+}
+
+html[dir='rtl'] .wh_search_button{
+    line-height:2em;
+}
+/* 검색 결과창 페이징버튼 왼쪽 border.. */
+html[dir='rtl'] .pagination {
+	padding:0;
+	border-left: 2px solid #697278;
+}
+/* 검색 결과창에 padding 제거 */
+html[dir='rtl'] .wh_search_results ol{
+	padding: 0;
+}
+/*
+ * 검색 결과 창 pagination 디자인
+ */
+html[dir='rtl'] .next.page-link{
+	content: url(images/search_arrowBack.svg);
+	padding: 0.5rem 14px;
+}
+html[dir='rtl'] .prev.page-link{
+	content: url(images/search_arrowForward.svg);
+	padding: 0.5rem 14px;
+}
+html[dir='rtl'] .next.page-link.disable_link{
+	content: url(images/search_arrowBack_dis.svg);
+}
+html[dir='rtl'] .prev.page-link.disable_link{
+	content: url(images/search_arrowForward_dis.svg);
+}
+
+
+

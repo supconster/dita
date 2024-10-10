@@ -1,0 +1,1 @@
+define({"topics":[{"title":"ប្រព័ន្ធសិនស័រ Forward Collision-Avoidance Assist (ជំនួយបញ្ចៀសការប៉ះទង្គិចខាងមុខ, FCA) (Sensor Fusion)","shortdesc":"<p class=\"shortdesc\"\/>","href":"topics\/CACHIGIDF61.html","attributes":{"data-id":"CACHIGIDF61"},"menu":{"hasChildren":true},"tocID":"CACHIGIDF61-d1148e365","next":"CACHIGIDF61-d1148e365"}]});

@@ -1,0 +1,1 @@
+define({"topics":[{"title":"ဘရိတ်ဆီပမာဏကို စစ်ဆေးခြင်း","shortdesc":"<p class=\"shortdesc\">တိုင်ကီထဲရှိ ဘရိတ်ဆီပမာဏကို ပုံမှန်စစ်ဆေးပါ။ ဆီပမာဏသည် တိုင်ကီဘေးဘက်ရှိ အများဆုံးနှင့် အနည်းဆုံး အမှတ်များကြားတွင် ရှိရပါမည်။<\/p>","href":"topics\/idEmpty00048.html","attributes":{"data-id":"idEmpty00048"},"menu":{"hasChildren":false},"tocID":"idEmpty00048-d1148e935","topics":[]}]});
