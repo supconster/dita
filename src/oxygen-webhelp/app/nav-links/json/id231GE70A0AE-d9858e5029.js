@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Battery capacity label","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231GE70A08E.html","attributes":{"data-id":"id231GE70A08E"},"menu":{"hasChildren":false},"tocID":"id231GE70A08E-d9858e5039","topics":[]}]});

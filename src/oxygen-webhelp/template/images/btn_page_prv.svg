@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
-  <g id="btn_page_prv" transform="translate(-11 -14)">
-    <rect id="사각형_298" data-name="사각형 298" width="80" height="80" rx="5" transform="translate(11 14)" fill="#e3e3e3"/>
-    <path id="패스_252" data-name="패스 252" d="M32.933,7.534a3.788,3.788,0,0,1,0,5.363L18.174,27.656,32.933,42.415a3.792,3.792,0,1,1-5.363,5.363L10.11,30.318a3.788,3.788,0,0,1,0-5.363L27.57,7.5A3.823,3.823,0,0,1,32.933,7.534Z" transform="translate(29.14 25.941)" fill="#fff"/>
-  </g>
-</svg>

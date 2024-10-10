@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Forward Collision-Avoidance Assist disabled","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231DDM009L75.html","attributes":{"data-id":"id231DDM009L75"},"menu":{"hasChildren":false},"tocID":"id231DDM009L75-d9858e6256","topics":[]}]});

@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Cruise Control operation","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231DDM00AOF.html","attributes":{"data-id":"id231DDM00AOF"},"menu":{"hasChildren":false},"tocID":"id231DDM00AOF-d9858e7047","next":"id231DDM00AOF-d9858e7047"}]});

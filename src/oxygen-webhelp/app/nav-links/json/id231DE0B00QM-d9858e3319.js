@@ -1,1 +1,0 @@
-define({"topics":[{"title":"Adjusting regenerative braking with paddle shifter","shortdesc":"<p class=\"shortdesc\"\/>","href":"id231DE0B00F8.html","attributes":{"data-id":"id231DE0B00F8"},"menu":{"hasChildren":false},"tocID":"id231DE0B00F8-d9858e3329","topics":[]}]});
